@@ -1,0 +1,256 @@
+"""
+train.py -- float training loop.
+
+Every run prints config.summary() first and writes it next to the checkpoint,
+so a checkpoint can never be separated from the feature contract it was
+trained under.
+
+Implemented in Step 5.
+"""
+
+from __future__ import annotations
+
+import argparse
+import os
+import random
+import time
+
+import numpy as np
+import tensorflow as tf
+from sklearn.metrics import classification_report, confusion_matrix
+
+import config
+import dataset
+from model import build_dscnn_s, macs, param_count
+
+RUN_NAME = "nakshatra_mvp_v1"
+
+
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description="Train DS-CNN-S for the nakshatra wake word.")
+    parser.add_argument("--run-name", type=str, default=RUN_NAME,
+                         help="checkpoint subfolder under config.CHECKPOINT_DIR (default: %(default)s)")
+    parser.add_argument("--epochs", type=int, default=None,
+                         help="override config.EPOCHS for this run")
+    parser.add_argument("--split-mode", type=str, default="speaker_disjoint",
+                         choices=("random_per_file", "speaker_disjoint"),
+                         help="dataset.make_splits() split mode (default: %(default)s)")
+    return parser.parse_args()
+
+
+def set_seeds(seed: int = config.SEED) -> None:
+    """Seed python / numpy / the framework RNGs."""
+    os.environ["PYTHONHASHSEED"] = str(seed)
+    random.seed(seed)
+    np.random.seed(seed)
+    tf.keras.utils.set_random_seed(seed)
+
+
+def lr_schedule(epoch: int) -> float:
+    """Step decay: config.LEARNING_RATE, dropped by config.LR_DECAY_FACTOR at
+    each boundary in config.LR_DECAY_EPOCHS."""
+    lr = config.LEARNING_RATE
+    for boundary in config.LR_DECAY_EPOCHS:
+        if epoch >= boundary:
+            lr *= config.LR_DECAY_FACTOR
+    return lr
+
+
+class _KeywordPrecision(tf.keras.metrics.Metric):
+    """Precision for the keyword class only -- argmax-based, so it's
+    unaffected by whether y_pred is logits or a softmax (both share the
+    same argmax)."""
+
+    def __init__(self, name: str = "keyword_precision", **kwargs):
+        super().__init__(name=name, **kwargs)
+        self.tp = self.add_weight(name="tp", initializer="zeros")
+        self.fp = self.add_weight(name="fp", initializer="zeros")
+
+    def update_state(self, y_true, y_pred, sample_weight=None):
+        true_idx = tf.argmax(y_true, axis=-1)
+        pred_idx = tf.argmax(y_pred, axis=-1)
+        is_pred_kw = tf.equal(pred_idx, config.KEYWORD_INDEX)
+        is_true_kw = tf.equal(true_idx, config.KEYWORD_INDEX)
+        self.tp.assign_add(tf.reduce_sum(
+            tf.cast(is_pred_kw & is_true_kw, tf.float32)))
+        self.fp.assign_add(tf.reduce_sum(
+            tf.cast(is_pred_kw & ~is_true_kw, tf.float32)))
+
+    def result(self):
+        return self.tp / (self.tp + self.fp + 1e-7)
+
+    def reset_state(self):
+        self.tp.assign(0.0)
+        self.fp.assign(0.0)
+
+
+class _KeywordRecall(tf.keras.metrics.Metric):
+    """Recall for the keyword class only -- the number that actually matters
+    for a wake word: missed activations are worse than a false unknown."""
+
+    def __init__(self, name: str = "keyword_recall", **kwargs):
+        super().__init__(name=name, **kwargs)
+        self.tp = self.add_weight(name="tp", initializer="zeros")
+        self.fn = self.add_weight(name="fn", initializer="zeros")
+
+    def update_state(self, y_true, y_pred, sample_weight=None):
+        true_idx = tf.argmax(y_true, axis=-1)
+        pred_idx = tf.argmax(y_pred, axis=-1)
+        is_pred_kw = tf.equal(pred_idx, config.KEYWORD_INDEX)
+        is_true_kw = tf.equal(true_idx, config.KEYWORD_INDEX)
+        self.tp.assign_add(tf.reduce_sum(
+            tf.cast(is_pred_kw & is_true_kw, tf.float32)))
+        self.fn.assign_add(tf.reduce_sum(
+            tf.cast(~is_pred_kw & is_true_kw, tf.float32)))
+
+    def result(self):
+        return self.tp / (self.tp + self.fn + 1e-7)
+
+    def reset_state(self):
+        self.tp.assign(0.0)
+        self.fn.assign(0.0)
+
+
+def _add_class_sample_weight(features, label):
+    """Per-class sample_weight (config.KEYWORD_CLASS_WEIGHT,
+    config.UNKNOWN_CLASS_WEIGHT, silence=1.0 baseline) via a per-example
+    sample_weight, rather than Keras's class_weight= kwarg -- that path is
+    finicky with one-hot targets coming from a tf.data.Dataset, while
+    sample_weight is unambiguous.
+
+    Unknown got its own weight after adding the silence class diluted the
+    keyword/unknown boundary (confusable-word rejection regressed once
+    unknown had to compete with silence for training signal too)."""
+    class_idx = tf.argmax(label, axis=-1)
+    class_weights = [1.0] * config.NUM_CLASSES
+    class_weights[config.UNKNOWN_INDEX] = config.UNKNOWN_CLASS_WEIGHT
+    class_weights[config.KEYWORD_INDEX] = config.KEYWORD_CLASS_WEIGHT
+    weight = tf.gather(tf.constant(class_weights, dtype=tf.float32), class_idx)
+    return features, label, weight
+
+
+def _print_confusion_matrix(cm: np.ndarray, labels: list[str]) -> None:
+    width = max(len(l) for l in labels) + 2
+    header = " " * width + "".join(f"{l:>{width}}" for l in labels)
+    print(header)
+    for i, row_label in enumerate(labels):
+        row = f"{row_label:>{width}}" + "".join(f"{v:>{width}}" for v in cm[i])
+        print(row)
+
+
+def main() -> None:
+    """Train DS-CNN-S and write the best checkpoint to config.CHECKPOINT_DIR."""
+    args = parse_args()
+    run_name = args.run_name
+
+    print(config.summary())
+
+    set_seeds()
+
+    run_dir = config.CHECKPOINT_DIR / run_name
+    run_dir.mkdir(parents=True, exist_ok=True)
+
+    # -- data --
+    manifest = dataset.build_manifest()
+    # Single-speaker MVP: speaker_disjoint would starve val/test entirely.
+    splits = dataset.make_splits(manifest, split_mode=args.split_mode)
+
+    # -- held-out guard: session "test" must be in no training-time split --
+    held = config.HELDOUT_SESSION
+    rec = config.RECORDINGS_DIR
+    n_pos = sum(1 for p in (rec / "positive").glob("*.wav") if dataset.speaker_id(p) == held)
+    n_hn = sum(1 for p in (rec / "hardneg").glob("*.wav") if dataset.speaker_id(p) == held)
+    n_amb = sum(1 for p in (rec / "ambient").glob("*.wav") if dataset.speaker_id(p) == held)
+    for name in ("train", "val"):
+        leaked = [s for s in splits[name] if dataset.speaker_id(s.path) == held]
+        assert not leaked, f"held-out files leaked into {name}: {leaked[:3]}"
+    assert not any(dataset.speaker_id(p) == held for p in dataset._background_files()), (
+        "held-out ambient is in the augmentation pool")
+    print(f"\nHELD-OUT GUARD: excluded {n_pos + n_hn + n_amb} session-{held!r} files from train/val/augmentation "
+          f"({n_pos} positive, {n_hn} hardneg, {n_amb} ambient); 0 found in train or val")
+    print("\nper-split class counts (unknown = hard_neg + talking + gsc; silence injected in make_dataset):")
+    for name in ("train", "val", "test"):
+        by_src: dict[str, int] = {}
+        for s_ in splits[name]:
+            by_src[s_.source] = by_src.get(s_.source, 0) + 1
+        distinct = {}
+        for s_ in splits[name]:
+            distinct.setdefault(s_.source, set()).add(str(s_.path))
+        kw = by_src.get("positives", 0)
+        print(f"  {name:5s}: keyword={kw} unknown={len(splits[name]) - kw} "
+              f"silence(synthetic)={round(kw * config.SILENCE_PERCENT / 100.0)}  "
+              f"by source (slots/distinct) = "
+              + ", ".join(f"{k}={v}/{len(distinct[k])}" for k, v in sorted(by_src.items())))
+    assert splits["val"], "val split is empty"
+    print(
+        f"\nsplit sizes: train={len(splits['train'])}, "
+        f"val={len(splits['val'])}, test={len(splits['test'])}"
+    )
+
+    train_ds = dataset.make_dataset(splits["train"], training=True)
+    train_ds = train_ds.map(_add_class_sample_weight)
+    val_ds = dataset.make_dataset(splits["val"], training=False)
+
+    # -- model --
+    model = build_dscnn_s()
+    print()
+    param_count(model)
+    print()
+    macs(model)
+
+    model.compile(
+        optimizer=tf.keras.optimizers.Adam(learning_rate=config.LEARNING_RATE),
+        loss=tf.keras.losses.CategoricalCrossentropy(from_logits=True),
+        metrics=["accuracy", _KeywordPrecision(), _KeywordRecall()],
+    )
+
+    checkpoint_path = run_dir / "float.keras"
+    callbacks = [
+        dataset.EpochCallback(),  # per-epoch augmentation seed
+        tf.keras.callbacks.LearningRateScheduler(lr_schedule),
+        # val_loss, not val_accuracy: with val split heavily skewed toward
+        # keyword (10/11), accuracy stays ~flat/uninformative for many
+        # epochs while loss keeps moving -- val_loss is the signal that
+        # actually reflects whether the model is still improving.
+        tf.keras.callbacks.ModelCheckpoint(
+            filepath=str(checkpoint_path),
+            monitor="val_loss",
+            mode="min",
+            save_best_only=True,
+        ),
+        tf.keras.callbacks.CSVLogger(str(run_dir / "training_log.csv")),
+    ]
+    # No EarlyStopping: config.EPOCHS is a ~30s run on this dataset size, and
+    # the tiny val split's early plateaus previously triggered a premature
+    # stop (6 real gradient steps) well before BatchNorm had converged.
+    # ModelCheckpoint(save_best_only=True) still protects against overfitting
+    # in the later epochs by keeping the best val_loss checkpoint, not
+    # necessarily the last one.
+
+    epochs = args.epochs if args.epochs is not None else config.EPOCHS
+
+    print(f"\nTraining for {epochs} epochs (no early stopping)...\n")
+
+    start = time.time()
+    model.fit(
+        train_ds,
+        validation_data=val_ds,
+        epochs=epochs,
+        callbacks=callbacks,
+    )
+    elapsed = time.time() - start
+    print(f"\nTraining time: {elapsed:.1f}s")
+
+    # The held-out session is never evaluated here: it is scored only by
+    # eval_heldout.py, after training, so nothing in this loop can tune on it.
+
+    # -- checkpoint must carry its feature contract with it --
+    (run_dir / "config_summary.txt").write_text(config.summary(), encoding="utf-8")
+
+    print(f"\nSaved checkpoint : {checkpoint_path}")
+    print(f"Saved log        : {run_dir / 'training_log.csv'}")
+    print(f"Saved contract   : {run_dir / 'config_summary.txt'}")
+
+
+if __name__ == "__main__":
+    main()

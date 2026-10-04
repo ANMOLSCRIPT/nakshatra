@@ -1,0 +1,4 @@
+# Edge agent (laptop stand-in for the ESP32) + the KWS training pipeline.
+-r kws/requirements.txt
+sounddevice>=0.4         # microphone capture for edge_agent.py / live_demo.py
+websockets>=12.0         # edge -> server link

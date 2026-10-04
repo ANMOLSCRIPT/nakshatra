@@ -1,0 +1,64 @@
+# audio corpora -- never in git
+hardware/kws/data/**
+!hardware/kws/data/**/
+!hardware/kws/data/**/README.md
+!hardware/kws/data/**/.gitkeep
+
+# The team's own voice recordings (recordings/, raw_sessions/, positives/, hard_neg/,
+# ambient background) are kept on the maintainers' machines and are NOT published:
+# they are recordings of real people. The trained model and the firmware bundle
+# built from them are in the repository, so the project runs without the audio;
+# only retraining and tests/e2e_pipeline.py need it.
+
+# training output (the shipped checkpoints below are kept on purpose)
+hardware/kws/artifacts/export/
+*.h5
+*.ckpt*
+
+# the firmware handoff bundle ships its model on purpose
+!hardware/firmware_handoff/**
+
+# downloaded ASR model weights -- never in git (scripts/download_asr_model.sh)
+backend/models/**
+!backend/models/**/
+!backend/models/**/README.md
+
+# runtime output
+backend/logs/
+tests/.tts_cache/
+
+# python
+__pycache__/
+*.py[cod]
+.venv*/
+venv/
+.ipynb_checkpoints/
+
+# os
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# secrets and local configuration -- never in git
+.env
+.env.*
+!.env.example
+*.jks
+*.keystore
+keystore.properties
+*.pem
+*.p12
+
+# android build output (the APK is published as a GitHub Release asset)
+android/.gradle/
+android/build/
+android/app/build/
+android/local.properties
+android/.idea/
+android/.kotlin/
+*.apk
+*.aab
+
+# editor / tooling
+.idea/
+.vscode/

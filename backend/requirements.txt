@@ -1,0 +1,9 @@
+# Cloud server: WebSocket ingest, Vosk ASR, heritage answer engine, static UI.
+fastapi>=0.110
+uvicorn>=0.29
+websockets>=12.0         # WebSocket transport for uvicorn + the edge simulator
+vosk>=0.3.44             # streaming ASR (model downloaded by scripts/download_asr_model.sh)
+rapidfuzz>=3.6           # fuzzy question / topic matching
+jellyfish>=1.0           # metaphone, for the phonetic fallback layer
+numpy>=1.26,<2.0
+soundfile>=0.12          # test_edge_sim.py WAV replay

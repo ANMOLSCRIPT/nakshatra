@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en" data-voice="idle">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nakshatra — a voice gateway to India's cultural heritage</title>
+<meta name="description" content="Say “Nakshatra” and ask about India's monuments, festivals, dance, music, crafts and traditions. A voice-activated edge device for SIH Problem Statement 214.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Non-blocking: the page renders in the fallback serif/sans if the venue has no internet. -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip" href="#ask">Skip to Ask Nakshatra</a>
+
+<header class="nav" id="nav">
+  <a class="brand" href="#top" aria-label="Nakshatra home">
+    <span class="brand-mark" data-motif="wheel"></span>
+    <span class="brand-name">Nakshatra</span>
+  </a>
+  <nav class="nav-links" aria-label="Sections">
+    <a href="#how">How it works</a>
+    <a href="#explore">Explore</a>
+    <a href="#featured">Featured</a>
+    <a href="#ask">Ask</a>
+    <a href="#map">Map</a>
+    <a href="library.html">Archive</a>
+  </nav>
+  <div class="nav-status" id="nav-status" title="Edge device status">
+    <span class="dot"></span><span id="nav-status-text">Connecting</span>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============================== HERO ============================== -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-sky" aria-hidden="true"></div>
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Smart India Hackathon · Problem Statement 214</p>
+        <h1 id="hero-title">Discover India.<br><em>One question at a time.</em></h1>
+        <p class="lede">Nakshatra is a voice companion for India's cultural heritage. Say its name, ask about a temple, a festival, a dance or a craft, and it answers aloud — with the wake word recognised on a tiny ESP32, not in the cloud.</p>
+        <div class="hero-cta">
+          <a class="btn btn-gold" href="#ask">Ask Nakshatra</a>
+          <a class="btn btn-ghost" href="#explore">Explore the archive</a>
+        </div>
+        <dl class="hero-stats" id="hero-stats" aria-label="What Nakshatra knows"></dl>
+      </div>
+
+      <a class="hero-stage" href="#ask" aria-label="Open the voice console">
+        <div class="orb orb-xl" data-orb></div>
+        <div class="voice-pill" aria-live="polite">
+          <span class="voice-pill-dot"></span>
+          <span data-voice-line>Connecting…</span>
+        </div>
+        <p class="hero-heard" data-heard-inline></p>
+      </a>
+    </div>
+    <div class="hero-border" aria-hidden="true"></div>
+  </section>
+
+  <!-- ========================= HOW IT WORKS ========================== -->
+  <section class="section section-paper" id="how" aria-labelledby="how-title">
+    <div class="wrap">
+      <p class="eyebrow">How Nakshatra works</p>
+      <h2 id="how-title">From a spoken word to a spoken answer</h2>
+      <p class="section-lede">A hybrid edge-and-cloud pipeline. The device stays silent on the network until it hears its name; only then does your question travel to the server.</p>
+
+      <ol class="pipeline" id="pipeline">
+        <li class="pipe-step" data-step="wake">
+          <span class="pipe-num">01</span>
+          <h3>Wake word</h3>
+          <p>An ESP32 listens through an INMP441 microphone and runs a 44.8 kB keyword model every 100 ms. It reacts to one word only: <strong>Nakshatra</strong>.</p>
+          <span class="pipe-where edge">On device</span>
+        </li>
+        <li class="pipe-step" data-step="listening">
+          <span class="pipe-num">02</span>
+          <h3>Voice capture</h3>
+          <p>The question that follows is streamed over Wi-Fi as raw 16 kHz audio in 100 ms frames, with 300 ms of pre-roll so the first word is never clipped.</p>
+          <span class="pipe-where edge">Edge → Wi-Fi</span>
+        </li>
+        <li class="pipe-step" data-step="listening">
+          <span class="pipe-num">03</span>
+          <h3>AI understanding</h3>
+          <p>A streaming speech recogniser turns the audio into text as you speak, so the words appear on screen before you finish the sentence.</p>
+          <span class="pipe-where cloud">Server ASR</span>
+        </li>
+        <li class="pipe-step" data-step="processing">
+          <span class="pipe-num">04</span>
+          <h3>Heritage knowledge</h3>
+          <p>The answer engine matches the question against <span data-count="topics">100</span> topics by name, by description and by sound, so many wordings reach the same answer.</p>
+          <span class="pipe-where cloud">Knowledge base</span>
+        </li>
+        <li class="pipe-step" data-step="answering">
+          <span class="pipe-num">05</span>
+          <h3>Spoken answer</h3>
+          <p>A short, accurate answer is shown and read aloud, and the device goes back to listening for its name.</p>
+          <span class="pipe-where cloud">Website / device</span>
+        </li>
+      </ol>
+
+      <div class="facts" id="facts">
+        <div class="fact"><span class="fact-num">44.8<small>kB</small></span><span class="fact-label">int8 keyword model that fits an ESP32</span></div>
+        <div class="fact"><span class="fact-num">100<small>ms</small></span><span class="fact-label">between wake-word inferences</span></div>
+        <div class="fact"><span class="fact-num">16<small>kHz</small></span><span class="fact-label">mono audio, streamed only after the wake word</span></div>
+        <div class="fact"><span class="fact-num" data-count="questions">360</span><span class="fact-label">question phrasings understood</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= EXPLORE INDIA ========================= -->
+  <section class="section section-ink" id="explore" aria-labelledby="explore-title">
+    <div class="wrap">
+      <p class="eyebrow">Explore India</p>
+      <h2 id="explore-title">Fifteen doors into a living heritage</h2>
+      <p class="section-lede">Choose a theme to see what Nakshatra can tell you, then tap any topic to hear the answer.</p>
+      <div class="cat-grid" id="cat-grid" role="list"></div>
+      <div class="cat-drawer" id="cat-drawer" hidden aria-live="polite"></div>
+    </div>
+  </section>
+
+  <!-- ======================= FEATURED HERITAGE ======================= -->
+  <section class="section section-paper" id="featured" aria-labelledby="featured-title">
+    <div class="wrap">
+      <p class="eyebrow">Featured heritage</p>
+      <h2 id="featured-title">Eight places every Indian story passes through</h2>
+      <div class="feat-grid" id="feat-grid"></div>
+    </div>
+  </section>
+
+  <!-- ========================= ASK NAKSHATRA ========================= -->
+  <section class="section section-ink ask" id="ask" aria-labelledby="ask-title">
+    <div class="wrap">
+      <p class="eyebrow">Ask Nakshatra</p>
+      <h2 id="ask-title">Say the name. Ask the question.</h2>
+
+      <ol class="stepper" id="stepper" aria-label="Voice interaction state"></ol>
+
+      <div class="console">
+        <div class="console-left">
+          <div class="console-orb">
+            <div class="orb orb-lg" data-orb></div>
+            <canvas class="wave" id="wave" width="640" height="120" aria-hidden="true"></canvas>
+          </div>
+          <p class="console-line" data-voice-line aria-live="polite">Connecting…</p>
+          <p class="console-hint" data-voice-hint></p>
+
+          <div class="heard" id="heard" hidden>
+            <span class="heard-label" id="heard-label">Heard</span>
+            <p class="heard-text" id="heard-text"></p>
+          </div>
+
+          <form class="ask-form" id="ask-form" autocomplete="off">
+            <label class="sr-only" for="ask-input">Type a question</label>
+            <input id="ask-input" name="q" type="text" placeholder="…or type a question, e.g. Why do we celebrate Diwali?" maxlength="200">
+            <button class="btn btn-gold" type="submit">Ask</button>
+          </form>
+
+          <p class="try-label">Try asking</p>
+          <div class="chips" id="try-chips"></div>
+
+          <label class="tts-toggle" id="tts-toggle">
+            <input type="checkbox" id="tts-check">
+            <span class="switch" aria-hidden="true"></span>
+            <span>Read answers aloud</span>
+          </label>
+          <label class="voice-pick" id="voice-pick">
+            <span>Voice</span>
+            <select id="voice-select" aria-label="Voice used to read answers"></select>
+          </label>
+        </div>
+
+        <div class="console-right">
+          <article class="answer" id="answer" aria-live="polite"></article>
+          <div class="telemetry" id="telemetry" aria-label="Pipeline telemetry"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================== CULTURAL MAP ========================== -->
+  <section class="section section-night" id="map" aria-labelledby="map-title">
+    <div class="wrap map-grid">
+      <div class="map-copy">
+        <p class="eyebrow">Cultural map</p>
+        <h2 id="map-title">The heritage constellation</h2>
+        <p class="section-lede">A <em>nakshatra</em> is a star cluster used to chart the sky. Here each star is a place on the map of India where a tradition lives — plotted at its true latitude and longitude. Pick a star to ask about it.</p>
+        <div class="map-legend" id="map-legend"></div>
+        <div class="map-card" id="map-card">
+          <p class="map-card-empty">Hover or tap a star.</p>
+        </div>
+      </div>
+      <div class="map-stage">
+        <svg id="map-svg" role="group" aria-label="Map of heritage locations across India"></svg>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-grid">
+    <div>
+      <div class="brand brand-footer"><span class="brand-mark" data-motif="wheel"></span><span class="brand-name">Nakshatra</span></div>
+      <p>An intelligent digital gateway to India's cultural heritage, built on a low-power voice-activated edge device.</p>
+    </div>
+    <div>
+      <h4>Smart India Hackathon</h4>
+      <ul>
+        <li>Problem Statement 214</li>
+        <li>Cultural Heritage and Traditions of India</li>
+        <li>Hardware edition</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Technology</h4>
+      <ul>
+        <li>ESP32-WROOM-32 · INMP441 I²S microphone</li>
+        <li>DS-CNN-S keyword model, int8 TFLite Micro</li>
+        <li>MFCC front end · WebSocket PCM streaming</li>
+        <li>Vosk ASR · FastAPI · rapidfuzz answer engine</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="library.html">The full archive of questions</a></li>
+        <li><a href="#ask">Ask Nakshatra</a></li>
+        <li><a href="#map">Heritage constellation</a></li>
+        <li><a href="/api/health">Server status (JSON)</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap footer-base">
+    <span>Wake word: “Nakshatra” · detected on-device</span>
+    <span id="footer-kb"></span>
+  </div>
+</footer>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>

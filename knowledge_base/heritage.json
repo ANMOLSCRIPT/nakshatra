@@ -1,0 +1,4645 @@
+{
+  "meta": {
+    "title": "Nakshatra Heritage Knowledge Base",
+    "domain": "Cultural Heritage and Traditions of India",
+    "problem_statement": "SIH 214",
+    "version": "1.0.0",
+    "language": "en-IN",
+    "notes": "One topic = one spoken answer. The matcher resolves a transcript to a topic using question/alternative_questions, name, aliases, descriptors and keywords. Edit this file, then run scripts/validate_kb.py and scripts/build_readme_qa.py."
+  },
+  "categories": [
+    {
+      "id": "monuments",
+      "name": "Monuments & Architecture",
+      "short": "Architecture",
+      "motif": "shikhara",
+      "blurb": "Temples, forts, tombs and stupas that carry two thousand years of stone and story."
+    },
+    {
+      "id": "festivals",
+      "name": "Festivals",
+      "short": "Festivals",
+      "motif": "lamp",
+      "blurb": "Lights, colours and harvests — why India celebrates, and how."
+    },
+    {
+      "id": "classical-dance",
+      "name": "Classical Dance",
+      "short": "Classical Dance",
+      "motif": "dancer",
+      "blurb": "Eight classical forms, each a language of gesture, rhythm and devotion."
+    },
+    {
+      "id": "classical-music",
+      "name": "Classical Music",
+      "short": "Music",
+      "motif": "veena",
+      "blurb": "Raga and tala: the Hindustani and Carnatic traditions and their instruments."
+    },
+    {
+      "id": "traditional-arts",
+      "name": "Traditional Arts",
+      "short": "Traditional Art",
+      "motif": "fish",
+      "blurb": "Painting traditions from village walls to royal ateliers."
+    },
+    {
+      "id": "handicrafts",
+      "name": "Handicrafts",
+      "short": "Handicrafts",
+      "motif": "pot",
+      "blurb": "Metal, clay and wood shaped by hands that inherited the craft."
+    },
+    {
+      "id": "textiles",
+      "name": "Indian Textiles",
+      "short": "Textiles",
+      "motif": "loom",
+      "blurb": "Silk, wool and cotton — woven, tied, dyed and embroidered."
+    },
+    {
+      "id": "cuisine",
+      "name": "Cuisine & Food Traditions",
+      "short": "Cuisine",
+      "motif": "thali",
+      "blurb": "Spices, staples and sweets from every corner of the country."
+    },
+    {
+      "id": "yoga",
+      "name": "Yoga & Traditional Practices",
+      "short": "Yoga & Wellness",
+      "motif": "lotus",
+      "blurb": "Yoga, Ayurveda and the practices of breath and balance."
+    },
+    {
+      "id": "unesco",
+      "name": "UNESCO Heritage",
+      "short": "UNESCO Heritage",
+      "motif": "stupa",
+      "blurb": "Sites the world has agreed to protect for all of humanity."
+    },
+    {
+      "id": "universities",
+      "name": "Ancient Universities",
+      "short": "Ancient Universities",
+      "motif": "vihara",
+      "blurb": "Nalanda, Takshashila and Vikramshila — where Asia came to learn."
+    },
+    {
+      "id": "cities",
+      "name": "Historical Cities",
+      "short": "Historical Cities",
+      "motif": "fort",
+      "blurb": "Living cities shaped by kings, saints, traders and poets."
+    },
+    {
+      "id": "traditions",
+      "name": "Religious & Cultural Traditions",
+      "short": "Traditions",
+      "motif": "mandala",
+      "blurb": "Greetings, rituals and customs that shape everyday life."
+    },
+    {
+      "id": "regional",
+      "name": "Regional Traditions",
+      "short": "Regional Traditions",
+      "motif": "ghat",
+      "blurb": "Fairs and festivals rooted in one landscape and its people."
+    },
+    {
+      "id": "folk",
+      "name": "Folk Culture",
+      "short": "Folk Culture",
+      "motif": "mask",
+      "blurb": "Dances, songs and puppets of the village square."
+    }
+  ],
+  "topics": [
+    {
+      "id": "konark-sun-temple",
+      "category": "monuments",
+      "name": "Konark Sun Temple",
+      "featured": true,
+      "motif": "wheel",
+      "question": "Tell me about Konark Temple",
+      "alternative_questions": [
+        "What is the history of Konark Sun Temple?",
+        "Why is the Konark Sun Temple famous?",
+        "Give me information about Konark"
+      ],
+      "aliases": [
+        "Konark",
+        "Konark Temple",
+        "Konarak",
+        "Sun Temple",
+        "Black Pagoda",
+        "Sun Temple of Odisha"
+      ],
+      "descriptors": [
+        "sun temple",
+        "temple shaped like a chariot",
+        "chariot of the sun god",
+        "black pagoda",
+        "stone wheels temple"
+      ],
+      "keywords": [
+        "konark",
+        "surya",
+        "chariot",
+        "wheels",
+        "odisha",
+        "narasimhadeva",
+        "sundial"
+      ],
+      "answer": "The Konark Sun Temple stands on the coast of Odisha and was built around 1250 CE by King Narasimhadeva the First of the Eastern Ganga dynasty. It is designed as a colossal stone chariot of Surya, the Sun God, with twenty-four intricately carved wheels drawn by seven horses. The wheels work as sundials, and the temple has been a UNESCO World Heritage Site since 1984.",
+      "related_topics": [
+        "odissi",
+        "pattachitra",
+        "unesco-sites-india"
+      ],
+      "location": {
+        "place": "Konark",
+        "state": "Odisha",
+        "lat": 19.8876,
+        "lon": 86.0945
+      },
+      "era": "13th century CE"
+    },
+    {
+      "id": "taj-mahal",
+      "category": "monuments",
+      "name": "Taj Mahal",
+      "featured": true,
+      "motif": "dome",
+      "question": "Tell me about the Taj Mahal",
+      "alternative_questions": [
+        "Who built the Taj Mahal?",
+        "Why is the Taj Mahal famous?",
+        "What is the history of the Taj Mahal?"
+      ],
+      "aliases": [
+        "Taj",
+        "Taj Mahal Agra",
+        "the Taj"
+      ],
+      "descriptors": [
+        "monument of love",
+        "white marble mausoleum",
+        "tomb of mumtaz mahal",
+        "marble tomb in agra"
+      ],
+      "keywords": [
+        "taj",
+        "agra",
+        "shah jahan",
+        "mumtaz",
+        "marble",
+        "yamuna",
+        "mausoleum"
+      ],
+      "answer": "The Taj Mahal is a white marble mausoleum on the banks of the Yamuna in Agra. The Mughal emperor Shah Jahan built it in memory of his wife Mumtaz Mahal; work began in 1632 and the complex took about twenty years to finish. Famous for its perfect symmetry and delicate stone inlay, it is a UNESCO World Heritage Site and a lasting symbol of love.",
+      "related_topics": [
+        "humayuns-tomb",
+        "red-fort",
+        "fatehpur-sikri"
+      ],
+      "location": {
+        "place": "Agra",
+        "state": "Uttar Pradesh",
+        "lat": 27.1751,
+        "lon": 78.0421
+      },
+      "era": "17th century CE"
+    },
+    {
+      "id": "hampi",
+      "category": "monuments",
+      "name": "Hampi",
+      "featured": true,
+      "motif": "gopuram",
+      "question": "What is special about Hampi?",
+      "alternative_questions": [
+        "Tell me about Hampi",
+        "What is the history of Hampi?",
+        "Why is Hampi famous?"
+      ],
+      "aliases": [
+        "Hampi ruins",
+        "Vijayanagara",
+        "Vijayanagar",
+        "Group of Monuments at Hampi",
+        "Vittala Temple",
+        "stone chariot of Hampi"
+      ],
+      "descriptors": [
+        "capital of the vijayanagara empire",
+        "stone chariot",
+        "musical pillars",
+        "ruins in karnataka"
+      ],
+      "keywords": [
+        "hampi",
+        "vijayanagara",
+        "tungabhadra",
+        "virupaksha",
+        "vittala",
+        "karnataka",
+        "ruins"
+      ],
+      "answer": "Hampi, in Karnataka, was the capital of the Vijayanagara Empire from the fourteenth to the sixteenth century and one of the richest cities of its time. Its ruins spread along the Tungabhadra river among giant boulders. Highlights include the Virupaksha Temple, still in worship, and the Vittala Temple with its stone chariot and musical pillars. Hampi is a UNESCO World Heritage Site.",
+      "related_topics": [
+        "meenakshi-temple",
+        "brihadeeswara-temple",
+        "unesco-sites-india"
+      ],
+      "location": {
+        "place": "Hampi",
+        "state": "Karnataka",
+        "lat": 15.335,
+        "lon": 76.46
+      },
+      "era": "14th–16th century CE"
+    },
+    {
+      "id": "ajanta-caves",
+      "category": "monuments",
+      "name": "Ajanta Caves",
+      "featured": true,
+      "motif": "chaitya",
+      "question": "Tell me about the Ajanta Caves",
+      "alternative_questions": [
+        "What are the Ajanta Caves famous for?",
+        "What is the history of Ajanta?",
+        "Where are the Ajanta Caves?"
+      ],
+      "aliases": [
+        "Ajanta",
+        "Ajanta cave paintings",
+        "Ajanta paintings"
+      ],
+      "descriptors": [
+        "buddhist cave paintings",
+        "painted buddhist caves",
+        "cave murals of maharashtra"
+      ],
+      "keywords": [
+        "ajanta",
+        "buddhist",
+        "murals",
+        "jataka",
+        "maharashtra",
+        "rock-cut",
+        "paintings"
+      ],
+      "answer": "The Ajanta Caves are about thirty rock-cut Buddhist caves carved into a horseshoe-shaped cliff in Maharashtra, created between the second century BCE and about 480 CE. They are celebrated for their murals and sculptures, which show the life of the Buddha and the Jataka tales and rank among the finest surviving ancient Indian paintings. Forgotten for centuries, they were rediscovered in 1819.",
+      "related_topics": [
+        "ellora-caves",
+        "sanchi-stupa",
+        "elephanta-caves"
+      ],
+      "location": {
+        "place": "Ajanta",
+        "state": "Maharashtra",
+        "lat": 20.5519,
+        "lon": 75.7033
+      },
+      "era": "2nd century BCE – 5th century CE"
+    },
+    {
+      "id": "ellora-caves",
+      "category": "monuments",
+      "name": "Ellora Caves",
+      "featured": true,
+      "motif": "shikhara",
+      "question": "What are the Ellora Caves?",
+      "alternative_questions": [
+        "Tell me about the Ellora Caves",
+        "Why are the Ellora Caves famous?",
+        "What is the Kailasa Temple?"
+      ],
+      "aliases": [
+        "Ellora",
+        "Kailasa Temple",
+        "Kailash Temple",
+        "Kailasa Temple Ellora"
+      ],
+      "descriptors": [
+        "temple carved from a single rock",
+        "buddhist hindu and jain caves",
+        "rock cut temple",
+        "carved out of one rock"
+      ],
+      "keywords": [
+        "ellora",
+        "kailasa",
+        "rashtrakuta",
+        "monolithic",
+        "jain",
+        "maharashtra",
+        "rock-cut"
+      ],
+      "answer": "The Ellora Caves in Maharashtra are a group of thirty-four rock-cut monasteries and temples made between about 600 and 1000 CE. Buddhist, Hindu and Jain caves stand side by side, reflecting India's tradition of religious harmony. The masterpiece is the Kailasa Temple, carved top-down out of a single rock under the Rashtrakuta king Krishna the First. Ellora is a UNESCO World Heritage Site.",
+      "related_topics": [
+        "ajanta-caves",
+        "elephanta-caves",
+        "mahabalipuram"
+      ],
+      "location": {
+        "place": "Ellora",
+        "state": "Maharashtra",
+        "lat": 20.0268,
+        "lon": 75.1779
+      },
+      "era": "7th–10th century CE"
+    },
+    {
+      "id": "sanchi-stupa",
+      "category": "monuments",
+      "name": "Sanchi Stupa",
+      "featured": true,
+      "motif": "stupa",
+      "question": "What is the significance of Sanchi Stupa?",
+      "alternative_questions": [
+        "Tell me about Sanchi Stupa",
+        "Who built the Sanchi Stupa?",
+        "What is the Great Stupa?"
+      ],
+      "aliases": [
+        "Sanchi",
+        "Great Stupa",
+        "Great Stupa of Sanchi",
+        "Sanchi Stupa of Ashoka"
+      ],
+      "descriptors": [
+        "great stupa",
+        "stupa built by ashoka",
+        "buddhist stupa",
+        "oldest stone structure"
+      ],
+      "keywords": [
+        "sanchi",
+        "stupa",
+        "ashoka",
+        "torana",
+        "gateways",
+        "madhya pradesh",
+        "relics"
+      ],
+      "answer": "The Great Stupa at Sanchi in Madhya Pradesh is one of the oldest stone structures in India. Emperor Ashoka commissioned it in the third century BCE to house relics of the Buddha. Its hemispherical dome symbolises the universe, and its four ornate gateways, called toranas, are carved with scenes from the Buddha's life. Sanchi is a UNESCO World Heritage Site.",
+      "related_topics": [
+        "mahabodhi-temple",
+        "ajanta-caves",
+        "nalanda"
+      ],
+      "location": {
+        "place": "Sanchi",
+        "state": "Madhya Pradesh",
+        "lat": 23.4794,
+        "lon": 77.7397
+      },
+      "era": "3rd century BCE"
+    },
+    {
+      "id": "red-fort",
+      "category": "monuments",
+      "name": "Red Fort",
+      "motif": "fort",
+      "question": "What is the Red Fort?",
+      "alternative_questions": [
+        "Tell me about the Red Fort",
+        "Who built the Red Fort?",
+        "Why is the Red Fort important?"
+      ],
+      "aliases": [
+        "Lal Qila",
+        "Lal Kila",
+        "Red Fort Delhi",
+        "Red Fort of Delhi"
+      ],
+      "descriptors": [
+        "red fort",
+        "fort in delhi",
+        "where the prime minister hoists the flag"
+      ],
+      "keywords": [
+        "red fort",
+        "lal qila",
+        "delhi",
+        "shah jahan",
+        "independence day",
+        "sandstone",
+        "mughal"
+      ],
+      "answer": "The Red Fort in Delhi was built by the Mughal emperor Shah Jahan and completed in 1648 as the palace fort of his new capital, Shahjahanabad. Named for its massive red sandstone walls, it was the seat of the Mughal emperors for nearly two hundred years. Every Independence Day, the Prime Minister hoists the national flag here. It is a UNESCO World Heritage Site.",
+      "related_topics": [
+        "taj-mahal",
+        "qutub-minar",
+        "humayuns-tomb"
+      ],
+      "location": {
+        "place": "Delhi",
+        "state": "Delhi",
+        "lat": 28.6562,
+        "lon": 77.241
+      },
+      "era": "17th century CE"
+    },
+    {
+      "id": "qutub-minar",
+      "category": "monuments",
+      "name": "Qutub Minar",
+      "motif": "minar",
+      "question": "Tell me about the Qutub Minar",
+      "alternative_questions": [
+        "How tall is the Qutub Minar?",
+        "Who built the Qutub Minar?",
+        "What is the Qutb Minar?"
+      ],
+      "aliases": [
+        "Qutb Minar",
+        "Kutub Minar",
+        "Qutab Minar",
+        "Iron Pillar of Delhi"
+      ],
+      "descriptors": [
+        "tallest brick minaret",
+        "tall tower in delhi",
+        "iron pillar",
+        "victory tower in delhi"
+      ],
+      "keywords": [
+        "qutub",
+        "minar",
+        "minaret",
+        "aibak",
+        "iltutmish",
+        "delhi",
+        "iron pillar"
+      ],
+      "answer": "The Qutub Minar in Delhi is the tallest brick minaret in the world, rising about seventy-three metres in five tapering storeys. Qutb-ud-din Aibak began it around 1199, and his successor Iltutmish completed it. Its surface is covered with carved bands of calligraphy. In the same complex stands the famous Iron Pillar, which has resisted rust for about sixteen hundred years.",
+      "related_topics": [
+        "red-fort",
+        "humayuns-tomb",
+        "fatehpur-sikri"
+      ],
+      "location": {
+        "place": "Delhi",
+        "state": "Delhi",
+        "lat": 28.5245,
+        "lon": 77.1855
+      },
+      "era": "12th–13th century CE"
+    },
+    {
+      "id": "fatehpur-sikri",
+      "category": "monuments",
+      "name": "Fatehpur Sikri",
+      "motif": "fort",
+      "question": "What is Fatehpur Sikri?",
+      "alternative_questions": [
+        "Tell me about Fatehpur Sikri",
+        "Who built Fatehpur Sikri?",
+        "What is the Buland Darwaza?"
+      ],
+      "aliases": [
+        "Fatehpur",
+        "Sikri",
+        "Buland Darwaza",
+        "City of Victory"
+      ],
+      "descriptors": [
+        "city of victory",
+        "abandoned mughal capital",
+        "capital built by akbar",
+        "city built by akbar"
+      ],
+      "keywords": [
+        "fatehpur",
+        "sikri",
+        "akbar",
+        "buland darwaza",
+        "salim chishti",
+        "mughal",
+        "sandstone"
+      ],
+      "answer": "Fatehpur Sikri, near Agra, is a royal city built by the Mughal emperor Akbar, who founded it in 1571 and made it his capital for about fourteen years. Built of red sandstone, it blends Persian and Indian styles. Its landmarks include the towering Buland Darwaza, the Panch Mahal and the tomb of the Sufi saint Salim Chishti. It is a UNESCO World Heritage Site.",
+      "related_topics": [
+        "taj-mahal",
+        "red-fort",
+        "humayuns-tomb"
+      ],
+      "location": {
+        "place": "Fatehpur Sikri",
+        "state": "Uttar Pradesh",
+        "lat": 27.0945,
+        "lon": 77.6679
+      },
+      "era": "16th century CE"
+    },
+    {
+      "id": "khajuraho",
+      "category": "monuments",
+      "name": "Khajuraho Temples",
+      "motif": "shikhara",
+      "question": "Tell me about the Khajuraho temples",
+      "alternative_questions": [
+        "What is Khajuraho famous for?",
+        "Who built the Khajuraho temples?"
+      ],
+      "aliases": [
+        "Khajuraho",
+        "Khajuraho Group of Monuments",
+        "Kandariya Mahadeva Temple"
+      ],
+      "descriptors": [
+        "temples built by the chandelas",
+        "chandela temples",
+        "temples of madhya pradesh with sculptures"
+      ],
+      "keywords": [
+        "khajuraho",
+        "chandela",
+        "nagara",
+        "sculptures",
+        "madhya pradesh",
+        "kandariya"
+      ],
+      "answer": "The Khajuraho temples in Madhya Pradesh were built by the Chandela dynasty between about 950 and 1050 CE. Of the original eighty-five temples, around twenty-five survive, dedicated to Hindu and Jain traditions. They are masterpieces of the Nagara style, with soaring spires and walls covered in sculptures of gods, dancers, musicians and everyday life. Khajuraho is a UNESCO World Heritage Site.",
+      "related_topics": [
+        "konark-sun-temple",
+        "sanchi-stupa",
+        "brihadeeswara-temple"
+      ],
+      "location": {
+        "place": "Khajuraho",
+        "state": "Madhya Pradesh",
+        "lat": 24.8318,
+        "lon": 79.9199
+      },
+      "era": "10th–11th century CE"
+    },
+    {
+      "id": "brihadeeswara-temple",
+      "category": "monuments",
+      "name": "Brihadeeswara Temple",
+      "motif": "gopuram",
+      "question": "Tell me about the Brihadeeswara Temple",
+      "alternative_questions": [
+        "What is the Big Temple of Thanjavur?",
+        "Who built the Brihadeeswara Temple?",
+        "What are the Great Living Chola Temples?"
+      ],
+      "aliases": [
+        "Brihadisvara Temple",
+        "Brihadeeswarar Temple",
+        "Big Temple",
+        "Thanjavur Big Temple",
+        "Tanjore Temple",
+        "Peruvudaiyar Kovil",
+        "Great Living Chola Temples",
+        "Chola temple"
+      ],
+      "descriptors": [
+        "big temple",
+        "temple built by raja raja chola",
+        "great living chola temples",
+        "granite temple of thanjavur"
+      ],
+      "keywords": [
+        "brihadeeswara",
+        "thanjavur",
+        "tanjore",
+        "chola",
+        "rajaraja",
+        "granite",
+        "vimana"
+      ],
+      "answer": "The Brihadeeswara Temple in Thanjavur, Tamil Nadu, was built by the Chola emperor Raja Raja Chola the First and completed in 1010 CE. Dedicated to Shiva and built entirely of granite, its tower rises about sixty-six metres and is crowned by a capstone weighing around eighty tonnes. It is part of the Great Living Chola Temples, a UNESCO World Heritage Site.",
+      "related_topics": [
+        "meenakshi-temple",
+        "tanjore-painting",
+        "mahabalipuram"
+      ],
+      "location": {
+        "place": "Thanjavur",
+        "state": "Tamil Nadu",
+        "lat": 10.7828,
+        "lon": 79.1318
+      },
+      "era": "11th century CE"
+    },
+    {
+      "id": "meenakshi-temple",
+      "category": "monuments",
+      "name": "Meenakshi Temple",
+      "motif": "gopuram",
+      "question": "Tell me about the Meenakshi Temple",
+      "alternative_questions": [
+        "What is the Meenakshi Amman Temple?",
+        "Why is the Meenakshi Temple famous?"
+      ],
+      "aliases": [
+        "Meenakshi Amman Temple",
+        "Madurai Meenakshi Temple",
+        "Meenakshi Sundareswarar Temple",
+        "Madurai Temple"
+      ],
+      "descriptors": [
+        "temple with colourful towers",
+        "temple of madurai",
+        "hall of a thousand pillars"
+      ],
+      "keywords": [
+        "meenakshi",
+        "madurai",
+        "gopuram",
+        "sundareswarar",
+        "nayak",
+        "tamil nadu"
+      ],
+      "answer": "The Meenakshi Amman Temple in Madurai, Tamil Nadu, is dedicated to the goddess Meenakshi and her consort Sundareswarar, a form of Shiva. Most of the present temple was built by the Nayak rulers in the sixteenth and seventeenth centuries. It is famous for its fourteen towering gateways, or gopurams, covered with thousands of brightly painted figures, and for its Hall of a Thousand Pillars.",
+      "related_topics": [
+        "madurai",
+        "brihadeeswara-temple",
+        "bharatanatyam"
+      ],
+      "location": {
+        "place": "Madurai",
+        "state": "Tamil Nadu",
+        "lat": 9.9195,
+        "lon": 78.1193
+      },
+      "era": "16th–17th century CE"
+    },
+    {
+      "id": "golden-temple",
+      "category": "monuments",
+      "name": "Golden Temple",
+      "motif": "dome",
+      "question": "Tell me about the Golden Temple",
+      "alternative_questions": [
+        "What is Harmandir Sahib?",
+        "Why is the Golden Temple important?",
+        "What is the langar at the Golden Temple?"
+      ],
+      "aliases": [
+        "Harmandir Sahib",
+        "Sri Harmandir Sahib",
+        "Darbar Sahib",
+        "Golden Temple Amritsar",
+        "Swarna Mandir"
+      ],
+      "descriptors": [
+        "golden temple",
+        "holiest sikh shrine",
+        "sikh temple in amritsar",
+        "largest free kitchen"
+      ],
+      "keywords": [
+        "golden temple",
+        "harmandir",
+        "amritsar",
+        "sikh",
+        "gurdwara",
+        "langar",
+        "guru arjan"
+      ],
+      "answer": "The Golden Temple, or Harmandir Sahib, in Amritsar, Punjab, is the holiest shrine of Sikhism. Completed in 1604 under Guru Arjan, it sits in the middle of a sacred pool and was later covered in gold by Maharaja Ranjit Singh. Its four entrances welcome people of every faith, and its langar, a free community kitchen, serves meals to tens of thousands of visitors every day.",
+      "related_topics": [
+        "baisakhi",
+        "bhangra",
+        "atithi-devo-bhava"
+      ],
+      "location": {
+        "place": "Amritsar",
+        "state": "Punjab",
+        "lat": 31.62,
+        "lon": 74.8765
+      },
+      "era": "16th–17th century CE"
+    },
+    {
+      "id": "mahabodhi-temple",
+      "category": "monuments",
+      "name": "Mahabodhi Temple",
+      "motif": "shikhara",
+      "question": "What is the Mahabodhi Temple?",
+      "alternative_questions": [
+        "Tell me about the Mahabodhi Temple",
+        "Where did the Buddha attain enlightenment?",
+        "What is Bodh Gaya?"
+      ],
+      "aliases": [
+        "Maha Bodhi Temple",
+        "Bodh Gaya",
+        "Bodhgaya",
+        "Bodhi Tree",
+        "Mahabodhi Temple Bodh Gaya"
+      ],
+      "descriptors": [
+        "where buddha attained enlightenment",
+        "buddha attained enlightenment",
+        "bodhi tree",
+        "place of enlightenment"
+      ],
+      "keywords": [
+        "mahabodhi",
+        "bodh gaya",
+        "buddha",
+        "enlightenment",
+        "bodhi tree",
+        "bihar",
+        "ashoka"
+      ],
+      "answer": "The Mahabodhi Temple at Bodh Gaya in Bihar marks the place where Prince Siddhartha attained enlightenment under the Bodhi tree and became the Buddha. Emperor Ashoka built the first shrine here in the third century BCE; the present brick temple dates from about the fifth or sixth century CE. It is one of the holiest sites of Buddhism and a UNESCO World Heritage Site.",
+      "related_topics": [
+        "sanchi-stupa",
+        "nalanda",
+        "vikramshila"
+      ],
+      "location": {
+        "place": "Bodh Gaya",
+        "state": "Bihar",
+        "lat": 24.6959,
+        "lon": 84.9911
+      },
+      "era": "5th–6th century CE"
+    },
+    {
+      "id": "charminar",
+      "category": "monuments",
+      "name": "Charminar",
+      "motif": "minar",
+      "question": "Tell me about the Charminar",
+      "alternative_questions": [
+        "What is the Charminar?",
+        "Who built the Charminar?"
+      ],
+      "aliases": [
+        "Char Minar",
+        "Charminar Hyderabad"
+      ],
+      "descriptors": [
+        "four minarets",
+        "monument with four towers",
+        "symbol of hyderabad"
+      ],
+      "keywords": [
+        "charminar",
+        "hyderabad",
+        "quli qutb shah",
+        "minarets",
+        "telangana"
+      ],
+      "answer": "The Charminar is the best-known landmark of Hyderabad in Telangana. Sultan Muhammad Quli Qutb Shah built it in 1591 when he founded the city. Its name means four minarets, after the four graceful towers at its corners, and it has a mosque on the top floor. The bustling bazaars around it are famous for bangles, pearls and Hyderabadi food.",
+      "related_topics": [
+        "biryani",
+        "bidriware",
+        "qutub-minar"
+      ],
+      "location": {
+        "place": "Hyderabad",
+        "state": "Telangana",
+        "lat": 17.3616,
+        "lon": 78.4747
+      },
+      "era": "16th century CE"
+    },
+    {
+      "id": "unesco-sites-india",
+      "category": "unesco",
+      "name": "UNESCO World Heritage Sites of India",
+      "motif": "mandala",
+      "question": "What are India's UNESCO World Heritage Sites?",
+      "alternative_questions": [
+        "How many UNESCO World Heritage Sites are there in India?",
+        "Tell me about UNESCO heritage sites in India",
+        "Which Indian monuments are World Heritage Sites?"
+      ],
+      "aliases": [
+        "UNESCO World Heritage Sites",
+        "World Heritage Sites of India",
+        "UNESCO sites in India",
+        "World Heritage Sites",
+        "UNESCO heritage"
+      ],
+      "descriptors": [
+        "world heritage sites",
+        "unesco sites",
+        "heritage sites in india",
+        "unesco world heritage"
+      ],
+      "keywords": [
+        "unesco",
+        "world heritage",
+        "sites",
+        "inscribed",
+        "cultural",
+        "natural"
+      ],
+      "answer": "India has forty-four UNESCO World Heritage Sites as of 2025, among the highest numbers in the world. Most are cultural sites, such as the Taj Mahal, the Ajanta and Ellora Caves, Hampi, Konark, Sanchi and the Red Fort. Others are natural wonders, like Kaziranga, the Sundarbans and the Western Ghats. The first Indian sites were inscribed in 1983.",
+      "related_topics": [
+        "taj-mahal",
+        "ajanta-caves",
+        "hampi",
+        "rani-ki-vav"
+      ],
+      "location": null,
+      "era": "Inscribed since 1983"
+    },
+    {
+      "id": "rani-ki-vav",
+      "category": "unesco",
+      "name": "Rani ki Vav",
+      "featured": true,
+      "motif": "stepwell",
+      "question": "What is Rani ki Vav?",
+      "alternative_questions": [
+        "Tell me about Rani ki Vav",
+        "Who built Rani ki Vav?",
+        "What is the Queen's Stepwell?"
+      ],
+      "aliases": [
+        "Rani ki Vav",
+        "Rani Ki Vaav",
+        "Ranki Vav",
+        "Queen's Stepwell",
+        "Patan stepwell",
+        "Rani ni Vav"
+      ],
+      "descriptors": [
+        "queen's stepwell",
+        "queens stepwell",
+        "stepwell in gujarat",
+        "stepwell on the hundred rupee note",
+        "inverted temple"
+      ],
+      "keywords": [
+        "rani ki vav",
+        "stepwell",
+        "patan",
+        "gujarat",
+        "udayamati",
+        "bhima",
+        "solanki"
+      ],
+      "answer": "Rani ki Vav, the Queen's Stepwell, is in Patan, Gujarat. Queen Udayamati built it in the eleventh century in memory of her husband, King Bhima the First. Designed like an inverted temple, it descends through seven levels of stairs decorated with more than five hundred principal sculptures. Buried under silt for centuries, it is now a UNESCO World Heritage Site and appears on the hundred rupee note.",
+      "related_topics": [
+        "dholavira",
+        "ahmedabad",
+        "unesco-sites-india"
+      ],
+      "location": {
+        "place": "Patan",
+        "state": "Gujarat",
+        "lat": 23.8589,
+        "lon": 72.1016
+      },
+      "era": "11th century CE"
+    },
+    {
+      "id": "mahabalipuram",
+      "category": "unesco",
+      "name": "Mahabalipuram",
+      "motif": "shikhara",
+      "question": "Tell me about Mahabalipuram",
+      "alternative_questions": [
+        "What is the Shore Temple?",
+        "What are the monuments at Mahabalipuram?",
+        "Who built the temples of Mamallapuram?"
+      ],
+      "aliases": [
+        "Mamallapuram",
+        "Shore Temple",
+        "Pancha Rathas",
+        "Five Rathas",
+        "Arjuna's Penance",
+        "Descent of the Ganges"
+      ],
+      "descriptors": [
+        "shore temple",
+        "temples built by the pallavas",
+        "pallava monuments",
+        "temple by the sea in tamil nadu"
+      ],
+      "keywords": [
+        "mahabalipuram",
+        "mamallapuram",
+        "pallava",
+        "shore temple",
+        "rathas",
+        "tamil nadu",
+        "relief"
+      ],
+      "answer": "Mahabalipuram, also called Mamallapuram, is a coastal town in Tamil Nadu known for monuments carved by the Pallava dynasty in the seventh and eighth centuries. They include the Shore Temple beside the Bay of Bengal, the Pancha Rathas, each cut from a single rock, and Arjuna's Penance, one of the largest open-air rock reliefs in the world. It is a UNESCO World Heritage Site.",
+      "related_topics": [
+        "brihadeeswara-temple",
+        "ellora-caves",
+        "kanchipuram-silk"
+      ],
+      "location": {
+        "place": "Mahabalipuram",
+        "state": "Tamil Nadu",
+        "lat": 12.6269,
+        "lon": 80.1927
+      },
+      "era": "7th–8th century CE"
+    },
+    {
+      "id": "elephanta-caves",
+      "category": "unesco",
+      "name": "Elephanta Caves",
+      "motif": "chaitya",
+      "question": "Tell me about the Elephanta Caves",
+      "alternative_questions": [
+        "What are the Elephanta Caves?",
+        "Where are the Elephanta Caves?"
+      ],
+      "aliases": [
+        "Elephanta",
+        "Elephanta Island",
+        "Gharapuri",
+        "Gharapuri Caves"
+      ],
+      "descriptors": [
+        "cave temples near mumbai",
+        "three headed shiva",
+        "island caves in mumbai harbour"
+      ],
+      "keywords": [
+        "elephanta",
+        "mumbai",
+        "shiva",
+        "trimurti",
+        "island",
+        "rock-cut",
+        "gharapuri"
+      ],
+      "answer": "The Elephanta Caves are rock-cut cave temples on an island in Mumbai Harbour, carved mainly between the fifth and seventh centuries and dedicated to Lord Shiva. Their most famous sculpture is the Trimurti, a majestic three-headed Shiva about six metres tall. The Portuguese named the island after a large stone elephant they found there. The caves are a UNESCO World Heritage Site.",
+      "related_topics": [
+        "ellora-caves",
+        "ajanta-caves",
+        "ganesh-chaturthi"
+      ],
+      "location": {
+        "place": "Mumbai",
+        "state": "Maharashtra",
+        "lat": 18.9633,
+        "lon": 72.9315
+      },
+      "era": "5th–7th century CE"
+    },
+    {
+      "id": "humayuns-tomb",
+      "category": "unesco",
+      "name": "Humayun's Tomb",
+      "motif": "dome",
+      "question": "Tell me about Humayun's Tomb",
+      "alternative_questions": [
+        "What is Humayun's Tomb?",
+        "Who built Humayun's Tomb?"
+      ],
+      "aliases": [
+        "Humayun Tomb",
+        "Humayuns Tomb",
+        "Tomb of Humayun",
+        "Humayun ka Maqbara"
+      ],
+      "descriptors": [
+        "first garden tomb",
+        "garden tomb in delhi",
+        "tomb that inspired the taj mahal"
+      ],
+      "keywords": [
+        "humayun",
+        "tomb",
+        "delhi",
+        "bega begum",
+        "charbagh",
+        "garden",
+        "mughal"
+      ],
+      "answer": "Humayun's Tomb in Delhi is the tomb of the second Mughal emperor, built in the 1560s and commissioned by his widow, Empress Bega Begum. It was the first great garden tomb on the Indian subcontinent, set in a four-part Persian garden called a charbagh. Its red sandstone and white marble design later inspired the Taj Mahal. It is a UNESCO World Heritage Site.",
+      "related_topics": [
+        "taj-mahal",
+        "red-fort",
+        "qutub-minar"
+      ],
+      "location": {
+        "place": "Delhi",
+        "state": "Delhi",
+        "lat": 28.5933,
+        "lon": 77.2507
+      },
+      "era": "16th century CE"
+    },
+    {
+      "id": "jantar-mantar",
+      "category": "unesco",
+      "name": "Jantar Mantar, Jaipur",
+      "motif": "sundial",
+      "question": "What is the Jantar Mantar?",
+      "alternative_questions": [
+        "Tell me about Jantar Mantar",
+        "Who built the Jantar Mantar in Jaipur?",
+        "What is the world's largest stone sundial?"
+      ],
+      "aliases": [
+        "Jantar Mantar",
+        "Jantar Mantar Jaipur",
+        "Samrat Yantra",
+        "Jaipur observatory"
+      ],
+      "descriptors": [
+        "largest stone sundial",
+        "astronomical observatory",
+        "observatory in jaipur",
+        "stone instruments to study the sky"
+      ],
+      "keywords": [
+        "jantar mantar",
+        "observatory",
+        "astronomy",
+        "sundial",
+        "jai singh",
+        "jaipur",
+        "samrat yantra"
+      ],
+      "answer": "The Jantar Mantar in Jaipur is an astronomical observatory completed in 1734 by Maharaja Sawai Jai Singh the Second. It has nineteen large instruments built of stone and brass to measure time, track stars and predict eclipses with the naked eye. Its Samrat Yantra is the world's largest stone sundial and tells the time to within about two seconds. It is a UNESCO World Heritage Site.",
+      "related_topics": [
+        "jaipur",
+        "konark-sun-temple",
+        "blue-pottery"
+      ],
+      "location": {
+        "place": "Jaipur",
+        "state": "Rajasthan",
+        "lat": 26.9248,
+        "lon": 75.8246
+      },
+      "era": "18th century CE"
+    },
+    {
+      "id": "dholavira",
+      "category": "unesco",
+      "name": "Dholavira",
+      "motif": "stepwell",
+      "question": "Tell me about Dholavira",
+      "alternative_questions": [
+        "What is Dholavira?",
+        "What is the Harappan city in Gujarat?",
+        "Tell me about the Indus Valley Civilisation site in India"
+      ],
+      "aliases": [
+        "Dholavira Harappan city",
+        "Harappan city",
+        "Indus Valley city",
+        "Indus Valley Civilisation",
+        "Harappan civilisation"
+      ],
+      "descriptors": [
+        "harappan city",
+        "indus valley city",
+        "indus valley civilisation",
+        "ancient city in kutch"
+      ],
+      "keywords": [
+        "dholavira",
+        "harappan",
+        "indus valley",
+        "kutch",
+        "reservoirs",
+        "gujarat",
+        "civilisation"
+      ],
+      "answer": "Dholavira, in the Kutch region of Gujarat, is one of the best-preserved cities of the Harappan, or Indus Valley, Civilisation. It was inhabited from about 3000 to 1500 BCE. The city is known for its careful planning, stone architecture and a remarkable system of reservoirs that stored water in a dry land. Dholavira became a UNESCO World Heritage Site in 2021.",
+      "related_topics": [
+        "rann-utsav",
+        "rani-ki-vav",
+        "dhokra"
+      ],
+      "location": {
+        "place": "Dholavira",
+        "state": "Gujarat",
+        "lat": 23.887,
+        "lon": 70.213
+      },
+      "era": "c. 3000–1500 BCE"
+    },
+    {
+      "id": "diwali",
+      "category": "festivals",
+      "name": "Diwali",
+      "motif": "lamp",
+      "question": "Why do we celebrate Diwali in India?",
+      "alternative_questions": [
+        "What is Diwali?",
+        "Tell me about Diwali",
+        "What is the festival of lights?"
+      ],
+      "aliases": [
+        "Deepavali",
+        "Dipawali",
+        "Deepawali",
+        "Festival of Lights",
+        "Divali"
+      ],
+      "descriptors": [
+        "festival of lights",
+        "festival of lamps",
+        "return of rama to ayodhya"
+      ],
+      "keywords": [
+        "diwali",
+        "deepavali",
+        "lights",
+        "diyas",
+        "lakshmi",
+        "rama",
+        "ayodhya"
+      ],
+      "answer": "Diwali, the festival of lights, celebrates the victory of light over darkness and good over evil. In much of India it marks the return of Lord Rama to Ayodhya after fourteen years of exile and his victory over Ravana. Families light rows of oil lamps called diyas, worship Goddess Lakshmi, draw rangoli and share sweets. It falls in October or November, and Jains and Sikhs celebrate it too.",
+      "related_topics": [
+        "rangoli",
+        "mithai",
+        "navratri"
+      ],
+      "location": null,
+      "era": "Autumn · October–November"
+    },
+    {
+      "id": "holi",
+      "category": "festivals",
+      "name": "Holi",
+      "motif": "lamp",
+      "question": "What is the significance of Holi?",
+      "alternative_questions": [
+        "Why do we celebrate Holi?",
+        "Tell me about Holi",
+        "What is the festival of colours?"
+      ],
+      "aliases": [
+        "Festival of Colours",
+        "Festival of Colors",
+        "Holika Dahan",
+        "Rangwali Holi"
+      ],
+      "descriptors": [
+        "festival of colours",
+        "festival of colors",
+        "festival of spring colours",
+        "throwing colours"
+      ],
+      "keywords": [
+        "holi",
+        "colours",
+        "holika",
+        "prahlada",
+        "spring",
+        "gulal",
+        "krishna"
+      ],
+      "answer": "Holi is the festival of colours, celebrated in March to welcome spring. It begins with Holika Dahan, a bonfire recalling how the devotee Prahlada was saved while the demoness Holika burned, a sign of good defeating evil. The next day people play with coloured powder and water, a custom linked to Krishna and Radha. Holi is a time to forgive, mend friendships and celebrate together.",
+      "related_topics": [
+        "diwali",
+        "mithai",
+        "kathak"
+      ],
+      "location": null,
+      "era": "Spring · March"
+    },
+    {
+      "id": "navratri",
+      "category": "festivals",
+      "name": "Navratri",
+      "motif": "lamp",
+      "question": "What is Navratri?",
+      "alternative_questions": [
+        "Why is Navratri celebrated?",
+        "Tell me about Navratri",
+        "What is Dussehra?"
+      ],
+      "aliases": [
+        "Navaratri",
+        "Nav Ratri",
+        "Nine Nights",
+        "Dussehra",
+        "Dasara",
+        "Vijayadashami"
+      ],
+      "descriptors": [
+        "nine nights festival",
+        "festival of nine nights",
+        "nine forms of durga"
+      ],
+      "keywords": [
+        "navratri",
+        "nine nights",
+        "durga",
+        "dussehra",
+        "vijayadashami",
+        "fasting",
+        "garba"
+      ],
+      "answer": "Navratri means nine nights. It is a festival dedicated to Goddess Durga, whose nine forms are worshipped on nine successive nights, usually in September or October. People fast, pray and, especially in Gujarat, dance Garba and Dandiya late into the night. The tenth day is Dussehra, or Vijayadashami, which celebrates the victory of good over evil.",
+      "related_topics": [
+        "garba",
+        "durga-puja",
+        "diwali"
+      ],
+      "location": null,
+      "era": "Autumn · September–October"
+    },
+    {
+      "id": "durga-puja",
+      "category": "festivals",
+      "name": "Durga Puja",
+      "motif": "lamp",
+      "question": "What is Durga Puja?",
+      "alternative_questions": [
+        "Tell me about Durga Puja",
+        "Why is Durga Puja celebrated?",
+        "How is Durga Puja celebrated in Kolkata?"
+      ],
+      "aliases": [
+        "Durga Pooja",
+        "Durgotsav",
+        "Pujo",
+        "Durga Puja Kolkata",
+        "Kolkata Durga Puja"
+      ],
+      "descriptors": [
+        "biggest festival of bengal",
+        "festival of kolkata",
+        "durga defeats mahishasura",
+        "pandal festival"
+      ],
+      "keywords": [
+        "durga puja",
+        "kolkata",
+        "bengal",
+        "pandal",
+        "mahishasura",
+        "dhak",
+        "immersion"
+      ],
+      "answer": "Durga Puja is the biggest festival of West Bengal, celebrating Goddess Durga's victory over the buffalo demon Mahishasura. For several days in autumn, beautifully crafted clay idols are worshipped in decorated temporary pavilions called pandals, to the beat of dhak drums. It ends with the immersion of the idols in the river. Durga Puja in Kolkata is on UNESCO's list of intangible cultural heritage.",
+      "related_topics": [
+        "navratri",
+        "baul",
+        "bankura-horse"
+      ],
+      "location": {
+        "place": "Kolkata",
+        "state": "West Bengal",
+        "lat": 22.5726,
+        "lon": 88.3639
+      },
+      "era": "Autumn · September–October"
+    },
+    {
+      "id": "pongal",
+      "category": "festivals",
+      "name": "Pongal",
+      "motif": "lamp",
+      "question": "What is Pongal?",
+      "alternative_questions": [
+        "Tell me about Pongal",
+        "Why is Pongal celebrated?",
+        "What is the harvest festival of Tamil Nadu?"
+      ],
+      "aliases": [
+        "Thai Pongal",
+        "Pongal festival",
+        "Tamil harvest festival"
+      ],
+      "descriptors": [
+        "harvest festival of tamil nadu",
+        "tamil harvest festival",
+        "thanksgiving to the sun god"
+      ],
+      "keywords": [
+        "pongal",
+        "tamil nadu",
+        "harvest",
+        "sun",
+        "rice",
+        "kolam",
+        "january"
+      ],
+      "answer": "Pongal is the four-day harvest festival of Tamil Nadu, celebrated in mid-January to thank the Sun God, nature and farm animals for a good harvest. Its name comes from a sweet dish of newly harvested rice, milk and jaggery, which is boiled until it overflows as a sign of abundance. Homes are decorated with kolam patterns, and cattle are honoured on Mattu Pongal.",
+      "related_topics": [
+        "rangoli",
+        "onam",
+        "dosa-idli"
+      ],
+      "location": {
+        "place": "Chennai",
+        "state": "Tamil Nadu",
+        "lat": 13.0827,
+        "lon": 80.2707
+      },
+      "era": "Winter harvest · mid-January"
+    },
+    {
+      "id": "onam",
+      "category": "festivals",
+      "name": "Onam",
+      "motif": "lamp",
+      "question": "What is Onam?",
+      "alternative_questions": [
+        "Tell me about Onam",
+        "Why is Onam celebrated?",
+        "What is the harvest festival of Kerala?"
+      ],
+      "aliases": [
+        "Onam festival",
+        "Thiruvonam",
+        "Kerala harvest festival"
+      ],
+      "descriptors": [
+        "harvest festival of kerala",
+        "festival of kerala",
+        "homecoming of king mahabali",
+        "flower carpet festival"
+      ],
+      "keywords": [
+        "onam",
+        "kerala",
+        "mahabali",
+        "pookalam",
+        "sadya",
+        "harvest",
+        "boat race"
+      ],
+      "answer": "Onam is the ten-day harvest festival of Kerala, celebrated in August or September. It welcomes the legendary King Mahabali, who is believed to visit his people once a year. Families make flower carpets called pookalam and share the Onam Sadya, a grand vegetarian feast served on a banana leaf. Snake boat races and the Pulikali tiger dance add to the celebrations.",
+      "related_topics": [
+        "snake-boat-race",
+        "kathakali",
+        "pongal"
+      ],
+      "location": {
+        "place": "Thiruvananthapuram",
+        "state": "Kerala",
+        "lat": 8.5241,
+        "lon": 76.9366
+      },
+      "era": "Monsoon harvest · August–September"
+    },
+    {
+      "id": "bihu",
+      "category": "festivals",
+      "name": "Bihu",
+      "motif": "lamp",
+      "question": "What is Bihu?",
+      "alternative_questions": [
+        "Tell me about Bihu",
+        "Why is Bihu celebrated?",
+        "What is the festival of Assam?"
+      ],
+      "aliases": [
+        "Rongali Bihu",
+        "Bohag Bihu",
+        "Magh Bihu",
+        "Bhogali Bihu",
+        "Bihu festival",
+        "Bihu dance"
+      ],
+      "descriptors": [
+        "festival of assam",
+        "assamese new year",
+        "harvest festival of assam"
+      ],
+      "keywords": [
+        "bihu",
+        "assam",
+        "rongali",
+        "bohag",
+        "harvest",
+        "dhol",
+        "pepa"
+      ],
+      "answer": "Bihu is the main festival of Assam and is celebrated three times a year, following the farming calendar. Rongali or Bohag Bihu in mid-April marks the Assamese New Year and the arrival of spring. Kati Bihu comes in October, and Bhogali or Magh Bihu in January celebrates the harvest with feasts and bonfires. The lively Bihu dance is performed to drums and the buffalo hornpipe.",
+      "related_topics": [
+        "sattriya",
+        "masala-chai",
+        "baisakhi"
+      ],
+      "location": {
+        "place": "Guwahati",
+        "state": "Assam",
+        "lat": 26.1445,
+        "lon": 91.7362
+      },
+      "era": "April, October and January"
+    },
+    {
+      "id": "raksha-bandhan",
+      "category": "festivals",
+      "name": "Raksha Bandhan",
+      "motif": "lamp",
+      "question": "What is Raksha Bandhan?",
+      "alternative_questions": [
+        "Why is Raksha Bandhan celebrated?",
+        "Tell me about Raksha Bandhan",
+        "What is Rakhi?"
+      ],
+      "aliases": [
+        "Rakhi",
+        "Rakshabandhan",
+        "Rakhi festival",
+        "Raksha Bandhan festival"
+      ],
+      "descriptors": [
+        "festival of brothers and sisters",
+        "brother and sister festival",
+        "tying a thread on the wrist",
+        "bond of protection"
+      ],
+      "keywords": [
+        "raksha bandhan",
+        "rakhi",
+        "brother",
+        "sister",
+        "thread",
+        "protection",
+        "shravana"
+      ],
+      "answer": "Raksha Bandhan celebrates the bond between brothers and sisters. The name means the bond of protection. On the full moon of the month of Shravana, usually in August, a sister ties a sacred thread called a rakhi on her brother's wrist and prays for his well-being. In return, he gives her a gift and promises to stand by her. Sweets are shared by the whole family.",
+      "related_topics": [
+        "diwali",
+        "mithai",
+        "mehndi"
+      ],
+      "location": null,
+      "era": "Monsoon · August"
+    },
+    {
+      "id": "eid-ul-fitr",
+      "category": "festivals",
+      "name": "Eid-ul-Fitr",
+      "motif": "lamp",
+      "question": "How is Eid celebrated in India?",
+      "alternative_questions": [
+        "What is Eid?",
+        "Tell me about Eid-ul-Fitr",
+        "Why is Eid celebrated?"
+      ],
+      "aliases": [
+        "Eid",
+        "Eid ul Fitr",
+        "Eid al-Fitr",
+        "Meethi Eid",
+        "Ramzan Eid",
+        "Id"
+      ],
+      "descriptors": [
+        "end of ramadan",
+        "festival after ramadan",
+        "end of the month of fasting"
+      ],
+      "keywords": [
+        "eid",
+        "ramadan",
+        "ramzan",
+        "fasting",
+        "prayer",
+        "charity",
+        "sevaiyan"
+      ],
+      "answer": "Eid-ul-Fitr marks the end of Ramadan, the Islamic holy month of fasting. In India the day begins with special prayers at mosques and open grounds. People wear new clothes, give charity to those in need and greet each other with Eid Mubarak. Homes prepare festive dishes such as biryani and sevaiyan, a sweet made from vermicelli and milk, and share them with neighbours of all faiths.",
+      "related_topics": [
+        "biryani",
+        "mehndi",
+        "charminar"
+      ],
+      "location": null,
+      "era": "End of Ramadan · lunar calendar"
+    },
+    {
+      "id": "ganesh-chaturthi",
+      "category": "festivals",
+      "name": "Ganesh Chaturthi",
+      "motif": "lamp",
+      "question": "What is Ganesh Chaturthi?",
+      "alternative_questions": [
+        "Tell me about Ganesh Chaturthi",
+        "Why is Ganesh Chaturthi celebrated?"
+      ],
+      "aliases": [
+        "Ganesha Chaturthi",
+        "Vinayaka Chaturthi",
+        "Ganeshotsav",
+        "Ganpati festival",
+        "Ganesh festival"
+      ],
+      "descriptors": [
+        "birthday of lord ganesha",
+        "festival of ganesha",
+        "elephant headed god festival",
+        "ganpati festival of mumbai"
+      ],
+      "keywords": [
+        "ganesh",
+        "ganesha",
+        "ganpati",
+        "chaturthi",
+        "mumbai",
+        "modak",
+        "tilak",
+        "immersion"
+      ],
+      "answer": "Ganesh Chaturthi celebrates the birth of Lord Ganesha, the elephant-headed god of wisdom and new beginnings. It is observed for ten days in August or September, most grandly in Maharashtra. Clay idols are worshipped at home and in public pavilions, and sweet modaks are offered. The freedom fighter Lokmanya Tilak made it a public festival in 1893. It ends with the immersion of the idols in water.",
+      "related_topics": [
+        "lavani",
+        "elephanta-caves",
+        "mithai"
+      ],
+      "location": {
+        "place": "Mumbai",
+        "state": "Maharashtra",
+        "lat": 19.076,
+        "lon": 72.8777
+      },
+      "era": "Monsoon · August–September"
+    },
+    {
+      "id": "baisakhi",
+      "category": "festivals",
+      "name": "Baisakhi",
+      "motif": "lamp",
+      "question": "What is Baisakhi?",
+      "alternative_questions": [
+        "Tell me about Baisakhi",
+        "Why is Baisakhi celebrated?",
+        "What is the harvest festival of Punjab?"
+      ],
+      "aliases": [
+        "Vaisakhi",
+        "Baisakhi festival",
+        "Vaisakhi festival",
+        "Punjab harvest festival"
+      ],
+      "descriptors": [
+        "harvest festival of punjab",
+        "sikh new year",
+        "founding of the khalsa"
+      ],
+      "keywords": [
+        "baisakhi",
+        "vaisakhi",
+        "punjab",
+        "khalsa",
+        "guru gobind singh",
+        "harvest",
+        "april"
+      ],
+      "answer": "Baisakhi, or Vaisakhi, is celebrated on the thirteenth or fourteenth of April, mainly in Punjab. It is a harvest festival that gives thanks for the wheat crop. For Sikhs it is especially sacred, because on this day in 1699 Guru Gobind Singh founded the Khalsa at Anandpur Sahib. People visit gurdwaras, join processions and dance the Bhangra and Giddha at lively fairs.",
+      "related_topics": [
+        "bhangra",
+        "golden-temple",
+        "bihu"
+      ],
+      "location": {
+        "place": "Anandpur Sahib",
+        "state": "Punjab",
+        "lat": 31.2393,
+        "lon": 76.5025
+      },
+      "era": "Spring harvest · 13–14 April"
+    },
+    {
+      "id": "classical-dances-of-india",
+      "category": "classical-dance",
+      "name": "Classical Dances of India",
+      "motif": "dancer",
+      "question": "What are the classical dances of India?",
+      "alternative_questions": [
+        "How many classical dance forms are there in India?",
+        "Tell me about Indian classical dance",
+        "Name the classical dances of India"
+      ],
+      "aliases": [
+        "Indian classical dance",
+        "classical dance forms",
+        "eight classical dances",
+        "classical dances",
+        "Natya Shastra"
+      ],
+      "descriptors": [
+        "classical dances of india",
+        "classical dance forms",
+        "eight classical dances",
+        "how many classical dances"
+      ],
+      "keywords": [
+        "classical dance",
+        "natya shastra",
+        "sangeet natak akademi",
+        "eight",
+        "forms"
+      ],
+      "answer": "India's Sangeet Natak Akademi recognises eight classical dance forms. They are Bharatanatyam from Tamil Nadu, Kathak from North India, Kathakali and Mohiniyattam from Kerala, Kuchipudi from Andhra Pradesh, Odissi from Odisha, Manipuri from Manipur and Sattriya from Assam. All of them trace their principles to the Natya Shastra, an ancient treatise on the performing arts by the sage Bharata.",
+      "related_topics": [
+        "bharatanatyam",
+        "kathak",
+        "odissi",
+        "kathakali"
+      ],
+      "location": null,
+      "era": "Rooted in the Natya Shastra"
+    },
+    {
+      "id": "bharatanatyam",
+      "category": "classical-dance",
+      "name": "Bharatanatyam",
+      "motif": "dancer",
+      "question": "What is Bharatanatyam?",
+      "alternative_questions": [
+        "Tell me about Bharatanatyam",
+        "Where did Bharatanatyam originate?",
+        "What is the classical dance of Tamil Nadu?"
+      ],
+      "aliases": [
+        "Bharatnatyam",
+        "Bharata Natyam",
+        "Bharat Natyam",
+        "Bharathanatyam",
+        "Sadir"
+      ],
+      "descriptors": [
+        "classical dance of tamil nadu",
+        "dance of tamil nadu",
+        "temple dance of tamil nadu"
+      ],
+      "keywords": [
+        "bharatanatyam",
+        "tamil nadu",
+        "mudras",
+        "abhinaya",
+        "rukmini devi",
+        "temple",
+        "carnatic"
+      ],
+      "answer": "Bharatanatyam is a classical dance from Tamil Nadu and one of the oldest dance traditions of India. It began in temples, where it was performed as an offering to the gods. The dance combines precise footwork, a half-sitting posture, hand gestures called mudras and expressive storytelling called abhinaya, set to Carnatic music. In the twentieth century, pioneers such as Rukmini Devi Arundale brought it to the stage.",
+      "related_topics": [
+        "carnatic-music",
+        "kuchipudi",
+        "classical-dances-of-india"
+      ],
+      "location": {
+        "place": "Chennai",
+        "state": "Tamil Nadu",
+        "lat": 13.0067,
+        "lon": 80.2571
+      },
+      "era": "Over 2,000 years old"
+    },
+    {
+      "id": "kathak",
+      "category": "classical-dance",
+      "name": "Kathak",
+      "motif": "dancer",
+      "question": "What is Kathak?",
+      "alternative_questions": [
+        "Tell me about Kathak",
+        "Where did Kathak originate?",
+        "What is the classical dance of North India?"
+      ],
+      "aliases": [
+        "Kathak dance",
+        "Katthak",
+        "Kathak gharana"
+      ],
+      "descriptors": [
+        "classical dance of north india",
+        "dance of the storytellers",
+        "dance with spins and ankle bells"
+      ],
+      "keywords": [
+        "kathak",
+        "katha",
+        "storytellers",
+        "ghungroo",
+        "spins",
+        "lucknow",
+        "jaipur",
+        "gharana"
+      ],
+      "answer": "Kathak is the classical dance of North India. Its name comes from katha, meaning story, because it began with wandering storytellers who acted out epics in temples. Later it flourished in the Mughal courts. Kathak is known for fast footwork, dazzling spins and the rhythm of ankle bells called ghungroo. Its main schools, or gharanas, are Lucknow, Jaipur and Banaras.",
+      "related_topics": [
+        "hindustani-music",
+        "tabla",
+        "classical-dances-of-india"
+      ],
+      "location": {
+        "place": "Lucknow",
+        "state": "Uttar Pradesh",
+        "lat": 26.8467,
+        "lon": 80.9462
+      },
+      "era": "Ancient · shaped in Mughal courts"
+    },
+    {
+      "id": "kathakali",
+      "category": "classical-dance",
+      "name": "Kathakali",
+      "motif": "dancer",
+      "question": "What is Kathakali?",
+      "alternative_questions": [
+        "Tell me about Kathakali",
+        "Why do Kathakali dancers paint their faces?",
+        "What is the dance drama of Kerala?"
+      ],
+      "aliases": [
+        "Kathakali dance",
+        "Katha Kali",
+        "Kathakali dance drama"
+      ],
+      "descriptors": [
+        "dance drama of kerala",
+        "painted face dance",
+        "painted faces",
+        "green face dance of kerala"
+      ],
+      "keywords": [
+        "kathakali",
+        "kerala",
+        "dance-drama",
+        "makeup",
+        "green",
+        "costume",
+        "chenda"
+      ],
+      "answer": "Kathakali is a classical dance-drama from Kerala that took shape in the seventeenth century. Performers wear towering headgear, wide skirts and striking face make-up; a green face, for example, shows a noble hero. Without speaking, they tell stories from the Ramayana and Mahabharata through eye movements, facial expressions and hand gestures, accompanied by drums and singers. Performances traditionally lasted all night.",
+      "related_topics": [
+        "mohiniyattam",
+        "onam",
+        "classical-dances-of-india"
+      ],
+      "location": {
+        "place": "Kochi",
+        "state": "Kerala",
+        "lat": 9.9312,
+        "lon": 76.2673
+      },
+      "era": "17th century CE"
+    },
+    {
+      "id": "kuchipudi",
+      "category": "classical-dance",
+      "name": "Kuchipudi",
+      "motif": "dancer",
+      "question": "What is Kuchipudi?",
+      "alternative_questions": [
+        "Tell me about Kuchipudi",
+        "Where did Kuchipudi originate?",
+        "What is the classical dance of Andhra Pradesh?"
+      ],
+      "aliases": [
+        "Kuchipudi dance",
+        "Kuchi Pudi",
+        "Koochipoodi"
+      ],
+      "descriptors": [
+        "classical dance of andhra pradesh",
+        "dance of andhra pradesh",
+        "dancing on a brass plate"
+      ],
+      "keywords": [
+        "kuchipudi",
+        "andhra pradesh",
+        "siddhendra yogi",
+        "tarangam",
+        "brass plate",
+        "dance-drama"
+      ],
+      "answer": "Kuchipudi is a classical dance from Andhra Pradesh, named after the village of Kuchipudi where it developed. It grew as a dance-drama tradition shaped by the saint Siddhendra Yogi, and it combines quick, graceful movement with acting and sometimes speech. Its most famous piece is the Tarangam, in which the dancer performs on the rim of a brass plate, often balancing a pot of water on the head.",
+      "related_topics": [
+        "bharatanatyam",
+        "kalamkari",
+        "classical-dances-of-india"
+      ],
+      "location": {
+        "place": "Kuchipudi",
+        "state": "Andhra Pradesh",
+        "lat": 16.2536,
+        "lon": 80.9153
+      },
+      "era": "17th century CE"
+    },
+    {
+      "id": "odissi",
+      "category": "classical-dance",
+      "name": "Odissi",
+      "motif": "dancer",
+      "question": "What is Odissi?",
+      "alternative_questions": [
+        "Tell me about Odissi",
+        "Where did Odissi originate?",
+        "What is the classical dance of Odisha?"
+      ],
+      "aliases": [
+        "Odissi dance",
+        "Orissi",
+        "Odisi"
+      ],
+      "descriptors": [
+        "classical dance of odisha",
+        "dance of odisha",
+        "three bend posture"
+      ],
+      "keywords": [
+        "odissi",
+        "odisha",
+        "tribhangi",
+        "jagannath",
+        "temple",
+        "kelucharan",
+        "sculpture"
+      ],
+      "answer": "Odissi is the classical dance of Odisha and one of the oldest surviving dance forms of India, shown in temple carvings more than two thousand years old. It was performed in temples as an offering to Lord Jagannath. Odissi is known for its lyrical grace and the tribhangi, a posture that bends the body at the neck, waist and knee, making dancers look like living sculptures.",
+      "related_topics": [
+        "konark-sun-temple",
+        "pattachitra",
+        "classical-dances-of-india"
+      ],
+      "location": {
+        "place": "Bhubaneswar",
+        "state": "Odisha",
+        "lat": 20.2961,
+        "lon": 85.8245
+      },
+      "era": "Over 2,000 years old"
+    },
+    {
+      "id": "manipuri",
+      "category": "classical-dance",
+      "name": "Manipuri Dance",
+      "motif": "dancer",
+      "question": "What is Manipuri dance?",
+      "alternative_questions": [
+        "Tell me about Manipuri dance",
+        "What is the classical dance of Manipur?",
+        "What is Ras Lila?"
+      ],
+      "aliases": [
+        "Manipuri",
+        "Manipuri Raas Leela",
+        "Ras Lila",
+        "Raas Leela",
+        "Manipuri dance"
+      ],
+      "descriptors": [
+        "classical dance of manipur",
+        "dance of manipur",
+        "dance of radha and krishna"
+      ],
+      "keywords": [
+        "manipuri",
+        "manipur",
+        "ras lila",
+        "radha",
+        "krishna",
+        "graceful",
+        "skirt"
+      ],
+      "answer": "Manipuri is the classical dance of Manipur in north-east India. It is best known for the Ras Lila, which portrays the divine love of Radha and Krishna. The style is gentle and flowing, with soft, rounded movements and no heavy stamping of the feet. Women dancers wear a stiff, barrel-shaped skirt decorated with mirrors and a translucent veil, which makes them appear to glide across the stage.",
+      "related_topics": [
+        "sattriya",
+        "hornbill-festival",
+        "classical-dances-of-india"
+      ],
+      "location": {
+        "place": "Imphal",
+        "state": "Manipur",
+        "lat": 24.817,
+        "lon": 93.9368
+      },
+      "era": "18th century CE"
+    },
+    {
+      "id": "mohiniyattam",
+      "category": "classical-dance",
+      "name": "Mohiniyattam",
+      "motif": "dancer",
+      "question": "What is Mohiniyattam?",
+      "alternative_questions": [
+        "Tell me about Mohiniyattam",
+        "What is the dance of the enchantress?"
+      ],
+      "aliases": [
+        "Mohiniattam",
+        "Mohini Attam",
+        "Mohini Yattam",
+        "Mohiniyattam dance"
+      ],
+      "descriptors": [
+        "dance of the enchantress",
+        "graceful women's dance of kerala",
+        "white and gold costume dance"
+      ],
+      "keywords": [
+        "mohiniyattam",
+        "kerala",
+        "mohini",
+        "enchantress",
+        "lasya",
+        "kasavu",
+        "women"
+      ],
+      "answer": "Mohiniyattam is a classical dance from Kerala whose name means the dance of the enchantress. It is named after Mohini, the female form taken by Lord Vishnu. Traditionally a solo dance performed by women, it is known for gentle, swaying movements and subtle expressions. Dancers wear an elegant white costume with a golden border and tie their hair in a bun at the side.",
+      "related_topics": [
+        "kathakali",
+        "onam",
+        "classical-dances-of-india"
+      ],
+      "location": {
+        "place": "Thrissur",
+        "state": "Kerala",
+        "lat": 10.5276,
+        "lon": 76.2144
+      },
+      "era": "Refined in the 19th century"
+    },
+    {
+      "id": "sattriya",
+      "category": "classical-dance",
+      "name": "Sattriya",
+      "motif": "dancer",
+      "question": "What is Sattriya?",
+      "alternative_questions": [
+        "Tell me about Sattriya dance",
+        "What is the classical dance of Assam?"
+      ],
+      "aliases": [
+        "Sattriya dance",
+        "Satriya",
+        "Sattriya Nritya"
+      ],
+      "descriptors": [
+        "classical dance of assam",
+        "dance of the monasteries of assam",
+        "monastery dance of majuli"
+      ],
+      "keywords": [
+        "sattriya",
+        "assam",
+        "sankardev",
+        "sattra",
+        "majuli",
+        "monastery",
+        "vaishnav"
+      ],
+      "answer": "Sattriya is the classical dance of Assam. It was created in the fifteenth century by the saint and reformer Srimanta Sankardev as a way of teaching devotion to Krishna through dance and drama. For centuries it was performed by monks in Vaishnav monasteries called sattras, especially on the river island of Majuli. Sattriya was recognised as a classical dance of India in the year 2000.",
+      "related_topics": [
+        "bihu",
+        "manipuri",
+        "classical-dances-of-india"
+      ],
+      "location": {
+        "place": "Majuli",
+        "state": "Assam",
+        "lat": 26.95,
+        "lon": 94.17
+      },
+      "era": "15th century CE"
+    },
+    {
+      "id": "hindustani-vs-carnatic",
+      "category": "classical-music",
+      "name": "Hindustani and Carnatic Music",
+      "motif": "veena",
+      "question": "What is the difference between Hindustani and Carnatic music?",
+      "alternative_questions": [
+        "How are Hindustani and Carnatic music different?",
+        "What are the two types of Indian classical music?",
+        "Tell me about Indian classical music"
+      ],
+      "aliases": [
+        "Hindustani and Carnatic",
+        "Hindustani versus Carnatic",
+        "Indian classical music",
+        "two traditions of Indian classical music",
+        "Carnatic and Hindustani"
+      ],
+      "descriptors": [
+        "difference between hindustani and carnatic",
+        "indian classical music",
+        "two types of classical music",
+        "north and south indian music"
+      ],
+      "keywords": [
+        "hindustani",
+        "carnatic",
+        "difference",
+        "classical music",
+        "raga",
+        "tala",
+        "north",
+        "south"
+      ],
+      "answer": "Indian classical music has two great traditions. Hindustani music belongs to North India and absorbed Persian influences; it gives great space to improvisation, in forms like khayal and dhrupad, with instruments such as the sitar and tabla. Carnatic music belongs to South India and is built around devotional compositions called kritis, with the veena and mridangam. Both are based on raga, the melody, and tala, the rhythm.",
+      "related_topics": [
+        "hindustani-music",
+        "carnatic-music",
+        "raga"
+      ],
+      "location": null,
+      "era": "Traditions diverged around the 13th century"
+    },
+    {
+      "id": "hindustani-music",
+      "category": "classical-music",
+      "name": "Hindustani Classical Music",
+      "motif": "veena",
+      "question": "What is Hindustani classical music?",
+      "alternative_questions": [
+        "Tell me about Hindustani music",
+        "Who was Tansen?"
+      ],
+      "aliases": [
+        "Hindustani music",
+        "Hindustani classical",
+        "North Indian classical music",
+        "Tansen",
+        "khayal",
+        "dhrupad"
+      ],
+      "descriptors": [
+        "north indian classical music",
+        "classical music of north india",
+        "music of the gharanas"
+      ],
+      "keywords": [
+        "hindustani",
+        "khayal",
+        "dhrupad",
+        "gharana",
+        "tansen",
+        "thumri",
+        "north india"
+      ],
+      "answer": "Hindustani classical music is the classical tradition of North India. A performer explores a raga slowly and then builds speed, improvising within a rhythmic cycle. Its main vocal styles are dhrupad, khayal and thumri, and its knowledge is passed down through family schools called gharanas. The legendary singer Tansen, one of the nine jewels of Emperor Akbar's court, is its most celebrated figure.",
+      "related_topics": [
+        "hindustani-vs-carnatic",
+        "sitar",
+        "tabla",
+        "raga"
+      ],
+      "location": {
+        "place": "Gwalior",
+        "state": "Madhya Pradesh",
+        "lat": 26.2183,
+        "lon": 78.1828
+      },
+      "era": "Medieval courts to the present"
+    },
+    {
+      "id": "carnatic-music",
+      "category": "classical-music",
+      "name": "Carnatic Music",
+      "motif": "veena",
+      "question": "What is Carnatic music?",
+      "alternative_questions": [
+        "Tell me about Carnatic music",
+        "Who are the Trinity of Carnatic music?",
+        "What is the classical music of South India?"
+      ],
+      "aliases": [
+        "Carnatic classical music",
+        "Karnatak music",
+        "Karnatic music",
+        "South Indian classical music",
+        "Tyagaraja"
+      ],
+      "descriptors": [
+        "south indian classical music",
+        "classical music of south india",
+        "trinity of carnatic music"
+      ],
+      "keywords": [
+        "carnatic",
+        "kriti",
+        "tyagaraja",
+        "purandara dasa",
+        "veena",
+        "mridangam",
+        "south india"
+      ],
+      "answer": "Carnatic music is the classical music of South India. It is centred on devotional compositions called kritis, sung or played with rich ornamentation. Purandara Dasa is honoured as its father, and its great Trinity of composers, Tyagaraja, Muthuswami Dikshitar and Syama Sastri, lived in the eighteenth century. Typical instruments are the veena, violin and mridangam drum. Chennai hosts a famous music season every December.",
+      "related_topics": [
+        "hindustani-vs-carnatic",
+        "bharatanatyam",
+        "raga"
+      ],
+      "location": {
+        "place": "Thiruvaiyaru",
+        "state": "Tamil Nadu",
+        "lat": 10.8826,
+        "lon": 79.1
+      },
+      "era": "Shaped in the 16th–18th centuries"
+    },
+    {
+      "id": "raga",
+      "category": "classical-music",
+      "name": "Raga",
+      "motif": "veena",
+      "question": "What is a raga?",
+      "alternative_questions": [
+        "What is a raga in Indian music?",
+        "Tell me about ragas",
+        "What are raga and tala?"
+      ],
+      "aliases": [
+        "Raag",
+        "Ragas",
+        "Raga and Tala",
+        "Tala",
+        "Taal"
+      ],
+      "descriptors": [
+        "melodic framework",
+        "melody in indian music",
+        "morning and evening ragas"
+      ],
+      "keywords": [
+        "raga",
+        "raag",
+        "tala",
+        "melody",
+        "mood",
+        "notes",
+        "improvisation"
+      ],
+      "answer": "A raga is the melodic framework of Indian classical music. It is not a fixed tune but a set of notes with rules for how they rise, fall and are ornamented, within which a musician improvises. Each raga creates a particular mood and is often linked to a time of day or a season; Raga Bhairav suits the morning and Raga Malhar the monsoon. Rhythm is given by the tala.",
+      "related_topics": [
+        "hindustani-music",
+        "carnatic-music",
+        "sitar"
+      ],
+      "location": null,
+      "era": "Described since ancient texts"
+    },
+    {
+      "id": "sitar",
+      "category": "classical-music",
+      "name": "Sitar",
+      "motif": "veena",
+      "question": "What is a sitar?",
+      "alternative_questions": [
+        "Tell me about the sitar",
+        "Who made the sitar famous?"
+      ],
+      "aliases": [
+        "Sitar instrument",
+        "Sitaar",
+        "Ravi Shankar"
+      ],
+      "descriptors": [
+        "long necked string instrument",
+        "string instrument of north india",
+        "instrument played by ravi shankar"
+      ],
+      "keywords": [
+        "sitar",
+        "strings",
+        "frets",
+        "gourd",
+        "ravi shankar",
+        "instrument",
+        "hindustani"
+      ],
+      "answer": "The sitar is a long-necked string instrument of Hindustani classical music. It has a resonating body made from a dried gourd, curved movable frets and around twenty strings; a few are plucked for the melody while the others vibrate in sympathy to give its shimmering sound. The sitar took its modern form in the eighteenth century. Pandit Ravi Shankar made it famous around the world.",
+      "related_topics": [
+        "tabla",
+        "hindustani-music",
+        "raga"
+      ],
+      "location": null,
+      "era": "Modern form from the 18th century"
+    },
+    {
+      "id": "tabla",
+      "category": "classical-music",
+      "name": "Tabla",
+      "motif": "veena",
+      "question": "What is a tabla?",
+      "alternative_questions": [
+        "Tell me about the tabla",
+        "How is the tabla played?"
+      ],
+      "aliases": [
+        "Tabla drums",
+        "Tablaa",
+        "Zakir Hussain"
+      ],
+      "descriptors": [
+        "pair of hand drums",
+        "hand drums of india",
+        "drums played by zakir hussain"
+      ],
+      "keywords": [
+        "tabla",
+        "drums",
+        "dayan",
+        "bayan",
+        "bols",
+        "zakir hussain",
+        "rhythm"
+      ],
+      "answer": "The tabla is a pair of hand drums and the main rhythm instrument of Hindustani music. The smaller wooden drum, the dayan, gives the high, tuned notes, and the larger metal drum, the bayan, gives the deep bass. A black spot of paste on each skin creates its ringing tone. Players use fingers and palms to speak rhythmic syllables called bols. Ustad Zakir Hussain was its best-known master.",
+      "related_topics": [
+        "sitar",
+        "kathak",
+        "hindustani-music"
+      ],
+      "location": null,
+      "era": "In use since the 18th century"
+    },
+    {
+      "id": "madhubani",
+      "category": "traditional-arts",
+      "name": "Madhubani Painting",
+      "motif": "fish",
+      "question": "What is Madhubani painting?",
+      "alternative_questions": [
+        "Tell me about Madhubani art",
+        "Where does Madhubani painting come from?",
+        "What is Mithila painting?"
+      ],
+      "aliases": [
+        "Madhubani",
+        "Madhubani art",
+        "Mithila painting",
+        "Mithila art",
+        "Madhu Bani"
+      ],
+      "descriptors": [
+        "folk painting of bihar",
+        "painting of the mithila region",
+        "art of bihar"
+      ],
+      "keywords": [
+        "madhubani",
+        "mithila",
+        "bihar",
+        "natural dyes",
+        "walls",
+        "women",
+        "geometric"
+      ],
+      "answer": "Madhubani painting, also called Mithila art, comes from the Mithila region of Bihar. Traditionally, women painted it on the walls and floors of their homes for weddings and festivals. It uses natural dyes applied with fingers, twigs and matchsticks, and every space is filled with patterns. Common subjects are gods and goddesses, the sun and moon, fish, birds and flowers. Today it is also painted on paper and cloth.",
+      "related_topics": [
+        "warli",
+        "pattachitra",
+        "nalanda"
+      ],
+      "location": {
+        "place": "Madhubani",
+        "state": "Bihar",
+        "lat": 26.3537,
+        "lon": 86.0718
+      },
+      "era": "Ancient folk tradition"
+    },
+    {
+      "id": "warli",
+      "category": "traditional-arts",
+      "name": "Warli Art",
+      "motif": "fish",
+      "question": "What is Warli art?",
+      "alternative_questions": [
+        "Tell me about Warli painting",
+        "Where does Warli art come from?"
+      ],
+      "aliases": [
+        "Warli",
+        "Warli painting",
+        "Varli art",
+        "Warli tribal art"
+      ],
+      "descriptors": [
+        "tribal art of maharashtra",
+        "white paintings on mud walls",
+        "stick figure tribal painting"
+      ],
+      "keywords": [
+        "warli",
+        "maharashtra",
+        "tribal",
+        "rice paste",
+        "mud walls",
+        "circles",
+        "triangles",
+        "tarpa"
+      ],
+      "answer": "Warli art is a tribal art form of the Warli people of Maharashtra. It is painted in white rice paste on the red-brown mud walls of village homes. Using only circles, triangles and squares, artists draw simple stick-like figures showing farming, hunting, festivals and daily life. A favourite scene is the tarpa dance, in which villagers hold hands and dance in a spiral around a musician.",
+      "related_topics": [
+        "madhubani",
+        "dhokra",
+        "lavani"
+      ],
+      "location": {
+        "place": "Dahanu",
+        "state": "Maharashtra",
+        "lat": 19.97,
+        "lon": 72.73
+      },
+      "era": "Ancient tribal tradition"
+    },
+    {
+      "id": "pattachitra",
+      "category": "traditional-arts",
+      "name": "Pattachitra",
+      "motif": "fish",
+      "question": "What is Pattachitra?",
+      "alternative_questions": [
+        "Tell me about Pattachitra painting",
+        "Where does Pattachitra come from?"
+      ],
+      "aliases": [
+        "Patachitra",
+        "Patta Chitra",
+        "Pattachitra painting",
+        "Odisha scroll painting"
+      ],
+      "descriptors": [
+        "cloth scroll painting",
+        "scroll painting of odisha",
+        "cloth painting of odisha"
+      ],
+      "keywords": [
+        "pattachitra",
+        "odisha",
+        "cloth",
+        "scroll",
+        "jagannath",
+        "raghurajpur",
+        "natural colours"
+      ],
+      "answer": "Pattachitra is a traditional cloth-based scroll painting from Odisha and West Bengal. The name joins patta, meaning cloth, and chitra, meaning picture. Artists prepare the cloth with a chalk and gum coating, then paint with natural colours, bold lines and richly decorated borders. Most paintings show Lord Jagannath and stories of Krishna. The heritage village of Raghurajpur near Puri is famous for this art.",
+      "related_topics": [
+        "odissi",
+        "konark-sun-temple",
+        "madhubani"
+      ],
+      "location": {
+        "place": "Raghurajpur",
+        "state": "Odisha",
+        "lat": 19.89,
+        "lon": 85.83
+      },
+      "era": "Over 1,000 years old"
+    },
+    {
+      "id": "tanjore-painting",
+      "category": "traditional-arts",
+      "name": "Tanjore Painting",
+      "motif": "fish",
+      "question": "What is Tanjore painting?",
+      "alternative_questions": [
+        "Tell me about Tanjore painting",
+        "What is Thanjavur painting?"
+      ],
+      "aliases": [
+        "Thanjavur painting",
+        "Tanjore art",
+        "Tanjavur painting",
+        "Tanjore paintings"
+      ],
+      "descriptors": [
+        "gold foil painting",
+        "painting with gold leaf",
+        "painting of thanjavur"
+      ],
+      "keywords": [
+        "tanjore",
+        "thanjavur",
+        "gold foil",
+        "gems",
+        "deities",
+        "nayak",
+        "maratha"
+      ],
+      "answer": "Tanjore painting is a classical South Indian art from Thanjavur in Tamil Nadu, which flourished under the Nayak and Maratha rulers from the sixteenth century onward. The paintings are made on wooden boards and are known for rich colours, raised relief work and glittering gold foil, often set with glass beads or precious stones. They usually show Hindu deities, especially the child Krishna.",
+      "related_topics": [
+        "brihadeeswara-temple",
+        "kalamkari",
+        "miniature-painting"
+      ],
+      "location": {
+        "place": "Thanjavur",
+        "state": "Tamil Nadu",
+        "lat": 10.787,
+        "lon": 79.1378
+      },
+      "era": "16th century CE onward"
+    },
+    {
+      "id": "miniature-painting",
+      "category": "traditional-arts",
+      "name": "Indian Miniature Painting",
+      "motif": "fish",
+      "question": "What is Indian miniature painting?",
+      "alternative_questions": [
+        "Tell me about miniature paintings",
+        "What are Mughal and Rajput miniatures?"
+      ],
+      "aliases": [
+        "Miniature painting",
+        "Miniature paintings",
+        "Mughal miniature",
+        "Rajput miniature",
+        "Pahari painting",
+        "Mughal painting",
+        "Rajput painting"
+      ],
+      "descriptors": [
+        "small detailed paintings",
+        "paintings of the mughal court",
+        "rajput and pahari schools"
+      ],
+      "keywords": [
+        "miniature",
+        "mughal",
+        "rajput",
+        "pahari",
+        "kangra",
+        "brush",
+        "manuscript"
+      ],
+      "answer": "Indian miniature paintings are small, highly detailed paintings made for books and albums. The Mughal school flourished from the sixteenth century in Emperor Akbar's workshops, blending Persian and Indian styles. The Rajput courts of Rajasthan and the Pahari schools of the Himalayan hills, such as Kangra, developed their own styles. Artists used fine squirrel-hair brushes and colours made from minerals, plants and gold.",
+      "related_topics": [
+        "tanjore-painting",
+        "udaipur",
+        "jaipur"
+      ],
+      "location": null,
+      "era": "16th–19th century CE"
+    },
+    {
+      "id": "kalamkari",
+      "category": "traditional-arts",
+      "name": "Kalamkari",
+      "motif": "fish",
+      "question": "What is Kalamkari?",
+      "alternative_questions": [
+        "Tell me about Kalamkari art",
+        "Where does Kalamkari come from?"
+      ],
+      "aliases": [
+        "Kalamkari art",
+        "Kalam Kari",
+        "Kalamkari painting",
+        "Kalamkari fabric"
+      ],
+      "descriptors": [
+        "pen work on cloth",
+        "hand painted cotton of andhra pradesh",
+        "pen drawn fabric art"
+      ],
+      "keywords": [
+        "kalamkari",
+        "andhra pradesh",
+        "pen",
+        "srikalahasti",
+        "machilipatnam",
+        "natural dyes",
+        "cotton"
+      ],
+      "answer": "Kalamkari is an art of hand-painting or block-printing on cotton cloth, from Andhra Pradesh. The word means pen work. In the Srikalahasti style, artists draw freehand with a bamboo pen and show scenes from the epics. In the Machilipatnam style, designs are printed with carved wooden blocks. Only natural dyes are used, and a single piece can go through more than twenty steps.",
+      "related_topics": [
+        "kuchipudi",
+        "bandhani",
+        "pattachitra"
+      ],
+      "location": {
+        "place": "Srikalahasti",
+        "state": "Andhra Pradesh",
+        "lat": 13.7499,
+        "lon": 79.6984
+      },
+      "era": "Over 3,000 years old"
+    },
+    {
+      "id": "blue-pottery",
+      "category": "handicrafts",
+      "name": "Jaipur Blue Pottery",
+      "motif": "pot",
+      "question": "What is Jaipur blue pottery?",
+      "alternative_questions": [
+        "Tell me about blue pottery",
+        "What is special about blue pottery?"
+      ],
+      "aliases": [
+        "Blue pottery",
+        "Jaipur pottery",
+        "Blue pottery of Jaipur"
+      ],
+      "descriptors": [
+        "blue pottery",
+        "pottery made without clay",
+        "blue and white pottery of jaipur"
+      ],
+      "keywords": [
+        "blue pottery",
+        "jaipur",
+        "quartz",
+        "cobalt",
+        "glaze",
+        "rajasthan"
+      ],
+      "answer": "Blue pottery is a celebrated craft of Jaipur in Rajasthan, named after its vivid cobalt blue colour. Unusually, it uses no clay at all. The dough is made from ground quartz stone, powdered glass, fuller's earth and gum. Pieces are painted by hand with flowers, birds and animals, then glazed and fired once. The technique came to India from Persia and Central Asia.",
+      "related_topics": [
+        "jaipur",
+        "jantar-mantar",
+        "bidriware"
+      ],
+      "location": {
+        "place": "Jaipur",
+        "state": "Rajasthan",
+        "lat": 26.9124,
+        "lon": 75.7873
+      },
+      "era": "Brought to Jaipur in the 19th century"
+    },
+    {
+      "id": "bidriware",
+      "category": "handicrafts",
+      "name": "Bidriware",
+      "motif": "pot",
+      "question": "What is Bidriware?",
+      "alternative_questions": [
+        "Tell me about Bidri work",
+        "Where does Bidriware come from?"
+      ],
+      "aliases": [
+        "Bidri",
+        "Bidri work",
+        "Bidri ware",
+        "Bidri craft"
+      ],
+      "descriptors": [
+        "silver inlay on black metal",
+        "black metal craft with silver",
+        "metal craft of bidar"
+      ],
+      "keywords": [
+        "bidriware",
+        "bidri",
+        "bidar",
+        "karnataka",
+        "silver inlay",
+        "zinc",
+        "black"
+      ],
+      "answer": "Bidriware is a metal craft from Bidar in Karnataka that began under the Bahmani sultans in the fourteenth and fifteenth centuries. Artisans cast an object in an alloy of zinc and copper, engrave it and inlay fine silver wire and sheet. A paste made with soil from the Bidar fort then turns the metal a deep black, leaving the silver patterns shining against it.",
+      "related_topics": [
+        "charminar",
+        "dhokra",
+        "blue-pottery"
+      ],
+      "location": {
+        "place": "Bidar",
+        "state": "Karnataka",
+        "lat": 17.9104,
+        "lon": 77.5199
+      },
+      "era": "14th–15th century CE"
+    },
+    {
+      "id": "channapatna-toys",
+      "category": "handicrafts",
+      "name": "Channapatna Toys",
+      "motif": "pot",
+      "question": "What are Channapatna toys?",
+      "alternative_questions": [
+        "Tell me about Channapatna toys",
+        "Which town is called the toy town of Karnataka?"
+      ],
+      "aliases": [
+        "Channapatna",
+        "Chennapatna toys",
+        "Channapatna wooden toys",
+        "Channapatna dolls"
+      ],
+      "descriptors": [
+        "wooden toys of karnataka",
+        "toy town of karnataka",
+        "lacquered wooden toys"
+      ],
+      "keywords": [
+        "channapatna",
+        "toys",
+        "wooden",
+        "lacquer",
+        "karnataka",
+        "ivory wood",
+        "tipu sultan"
+      ],
+      "answer": "Channapatna toys are colourful wooden toys from the town of Channapatna in Karnataka, which is known as the toy town. They are turned on a lathe from soft ivory wood and coloured with lacquer and vegetable dyes, which makes them safe for children. The craft is said to have begun when Tipu Sultan invited Persian artisans to train local craftsmen. It is protected by a Geographical Indication tag.",
+      "related_topics": [
+        "bidriware",
+        "hampi",
+        "kathputli"
+      ],
+      "location": {
+        "place": "Channapatna",
+        "state": "Karnataka",
+        "lat": 12.6518,
+        "lon": 77.2067
+      },
+      "era": "18th century CE"
+    },
+    {
+      "id": "dhokra",
+      "category": "handicrafts",
+      "name": "Dhokra Art",
+      "motif": "pot",
+      "question": "What is Dhokra art?",
+      "alternative_questions": [
+        "Tell me about Dhokra metal casting",
+        "What is lost wax casting in India?"
+      ],
+      "aliases": [
+        "Dhokra",
+        "Dokra",
+        "Dhokra craft",
+        "Dokra art",
+        "Dhokra metal craft",
+        "lost wax casting"
+      ],
+      "descriptors": [
+        "lost wax casting",
+        "lost wax metal casting",
+        "tribal brass figures",
+        "tribal metal craft"
+      ],
+      "keywords": [
+        "dhokra",
+        "dokra",
+        "lost wax",
+        "brass",
+        "bastar",
+        "tribal",
+        "casting",
+        "dancing girl"
+      ],
+      "answer": "Dhokra is a tribal metal craft that uses the lost-wax casting technique, practised in India for more than four thousand years. The famous Dancing Girl of Mohenjo-daro was made the same way. Artisans shape a model in wax over a clay core, cover it with clay and pour in molten brass, which replaces the wax. It is practised in Chhattisgarh, West Bengal, Odisha and Jharkhand.",
+      "related_topics": [
+        "dholavira",
+        "bankura-horse",
+        "warli"
+      ],
+      "location": {
+        "place": "Bastar",
+        "state": "Chhattisgarh",
+        "lat": 19.0748,
+        "lon": 82.008
+      },
+      "era": "Over 4,000 years old"
+    },
+    {
+      "id": "bankura-horse",
+      "category": "handicrafts",
+      "name": "Bankura Terracotta Horse",
+      "motif": "pot",
+      "question": "What is the Bankura horse?",
+      "alternative_questions": [
+        "Tell me about the Bankura terracotta horse",
+        "What is the terracotta craft of West Bengal?"
+      ],
+      "aliases": [
+        "Bankura horse",
+        "Bankura terracotta",
+        "Panchmura horse",
+        "terracotta horse"
+      ],
+      "descriptors": [
+        "terracotta horse",
+        "clay horse of bengal",
+        "terracotta craft of west bengal"
+      ],
+      "keywords": [
+        "bankura",
+        "terracotta",
+        "horse",
+        "panchmura",
+        "west bengal",
+        "clay"
+      ],
+      "answer": "The Bankura horse is a terracotta horse made by potters of Panchmura village in the Bankura district of West Bengal. With its long neck, upright ears and elegant, stylised body, it was originally made as an offering to village deities. The horse is shaped in parts on a potter's wheel, joined, dried and fired. Today it is admired worldwide as a symbol of Indian folk craft.",
+      "related_topics": [
+        "durga-puja",
+        "dhokra",
+        "baul"
+      ],
+      "location": {
+        "place": "Bankura",
+        "state": "West Bengal",
+        "lat": 23.2324,
+        "lon": 87.0717
+      },
+      "era": "Centuries-old ritual craft"
+    },
+    {
+      "id": "banarasi-silk",
+      "category": "textiles",
+      "name": "Banarasi Silk",
+      "motif": "loom",
+      "question": "What is Banarasi silk?",
+      "alternative_questions": [
+        "Tell me about Banarasi sarees",
+        "Why are Banarasi sarees famous?"
+      ],
+      "aliases": [
+        "Banarasi saree",
+        "Banarasi sari",
+        "Banarasi silk saree",
+        "Benarasi silk",
+        "Banaras silk",
+        "Varanasi silk"
+      ],
+      "descriptors": [
+        "silk sarees of varanasi",
+        "silk of varanasi",
+        "gold brocade saree",
+        "bridal silk saree"
+      ],
+      "keywords": [
+        "banarasi",
+        "silk",
+        "varanasi",
+        "zari",
+        "brocade",
+        "saree",
+        "weavers"
+      ],
+      "answer": "Banarasi silk is a fine silk fabric woven in Varanasi, Uttar Pradesh. Banarasi sarees are famous for rich brocade work in gold and silver thread, called zari, with floral and leaf patterns that came from Mughal designs. A single saree can take from two weeks to six months to weave by hand. They are among the most treasured bridal sarees in India and have a Geographical Indication tag.",
+      "related_topics": [
+        "varanasi",
+        "kanchipuram-silk",
+        "chikankari"
+      ],
+      "location": {
+        "place": "Varanasi",
+        "state": "Uttar Pradesh",
+        "lat": 25.3176,
+        "lon": 82.9739
+      },
+      "era": "Flourished from the Mughal period"
+    },
+    {
+      "id": "kanchipuram-silk",
+      "category": "textiles",
+      "name": "Kanchipuram Silk",
+      "motif": "loom",
+      "question": "What is Kanchipuram silk?",
+      "alternative_questions": [
+        "Tell me about Kanjeevaram sarees",
+        "Why are Kanchipuram sarees special?"
+      ],
+      "aliases": [
+        "Kanjeevaram silk",
+        "Kanjivaram saree",
+        "Kanchipuram saree",
+        "Kanjeevaram saree",
+        "Kanchi silk",
+        "Kancheepuram silk"
+      ],
+      "descriptors": [
+        "silk sarees of tamil nadu",
+        "silk of tamil nadu",
+        "temple border saree"
+      ],
+      "keywords": [
+        "kanchipuram",
+        "kanjeevaram",
+        "silk",
+        "tamil nadu",
+        "zari",
+        "saree",
+        "mulberry"
+      ],
+      "answer": "Kanchipuram silk sarees, also called Kanjeevaram, are woven in the temple town of Kanchipuram in Tamil Nadu. They are made from pure mulberry silk and heavy gold thread, which makes them rich and long-lasting. The body and the border are woven separately and then interlocked so firmly that the joint does not tear. The designs are inspired by temple towers, peacocks, mangoes and scenes from the epics.",
+      "related_topics": [
+        "banarasi-silk",
+        "mahabalipuram",
+        "bharatanatyam"
+      ],
+      "location": {
+        "place": "Kanchipuram",
+        "state": "Tamil Nadu",
+        "lat": 12.8342,
+        "lon": 79.7036
+      },
+      "era": "About 400 years old"
+    },
+    {
+      "id": "pashmina",
+      "category": "textiles",
+      "name": "Pashmina",
+      "motif": "loom",
+      "question": "What is Pashmina?",
+      "alternative_questions": [
+        "Tell me about Pashmina shawls",
+        "Why is Pashmina so special?",
+        "What is the famous shawl of Kashmir?"
+      ],
+      "aliases": [
+        "Pashmina shawl",
+        "Pashmina wool",
+        "Kashmiri shawl",
+        "Kashmir shawl",
+        "Cashmere"
+      ],
+      "descriptors": [
+        "shawl of kashmir",
+        "soft wool of kashmir",
+        "wool of the himalayan goat",
+        "soft gold of kashmir"
+      ],
+      "keywords": [
+        "pashmina",
+        "kashmir",
+        "shawl",
+        "wool",
+        "changthangi",
+        "goat",
+        "ladakh"
+      ],
+      "answer": "Pashmina is one of the finest wools in the world. It comes from the soft undercoat of the Changthangi goat, which lives on the cold, high plateau of Ladakh. In Kashmir the fibre is spun by hand and woven into light, warm shawls, a craft passed down through generations. Each fibre is far thinner than a human hair, which is why Pashmina is often called soft gold.",
+      "related_topics": [
+        "hemis-festival",
+        "banarasi-silk",
+        "khadi"
+      ],
+      "location": {
+        "place": "Srinagar",
+        "state": "Jammu and Kashmir",
+        "lat": 34.0837,
+        "lon": 74.7973
+      },
+      "era": "Centuries-old Kashmiri craft"
+    },
+    {
+      "id": "khadi",
+      "category": "textiles",
+      "name": "Khadi",
+      "motif": "loom",
+      "question": "What is Khadi?",
+      "alternative_questions": [
+        "Tell me about Khadi",
+        "Why is Khadi important in Indian history?",
+        "What is the charkha?"
+      ],
+      "aliases": [
+        "Khaddar",
+        "Khadi cloth",
+        "Khadi fabric",
+        "Charkha",
+        "spinning wheel"
+      ],
+      "descriptors": [
+        "hand spun cloth",
+        "hand spun and hand woven",
+        "fabric of the freedom movement",
+        "cloth promoted by gandhi"
+      ],
+      "keywords": [
+        "khadi",
+        "hand-spun",
+        "charkha",
+        "gandhi",
+        "swadeshi",
+        "cotton",
+        "freedom"
+      ],
+      "answer": "Khadi is cloth that is spun and woven entirely by hand, usually from cotton. Mahatma Gandhi made khadi and the spinning wheel, the charkha, symbols of self-reliance during India's freedom struggle, urging people to wear cloth made in their own villages. Khadi stays cool in summer and warm in winter. Today it supports rural spinners and weavers and is valued as an eco-friendly fabric.",
+      "related_topics": [
+        "ahmedabad",
+        "pashmina",
+        "bandhani"
+      ],
+      "location": null,
+      "era": "Symbol of the freedom movement, 1920s"
+    },
+    {
+      "id": "bandhani",
+      "category": "textiles",
+      "name": "Bandhani",
+      "motif": "loom",
+      "question": "What is Bandhani?",
+      "alternative_questions": [
+        "Tell me about Bandhani tie and dye",
+        "What is Bandhej?"
+      ],
+      "aliases": [
+        "Bandhej",
+        "Bandhni",
+        "Bandhani tie dye",
+        "tie and dye",
+        "tie dye of Gujarat"
+      ],
+      "descriptors": [
+        "tie and dye",
+        "tie dye fabric",
+        "tie dye of gujarat and rajasthan",
+        "dotted tie dye fabric"
+      ],
+      "keywords": [
+        "bandhani",
+        "bandhej",
+        "tie-dye",
+        "gujarat",
+        "rajasthan",
+        "knots",
+        "dots"
+      ],
+      "answer": "Bandhani is a tie-and-dye textile art of Gujarat and Rajasthan. The name comes from a Sanskrit word meaning to tie. Artisans pinch the cloth and bind it tightly with thread at thousands of tiny points, then dye it. The tied parts resist the colour and form patterns of dots, waves and squares. Bandhani sarees and turbans in bright red, yellow and green are worn at weddings and festivals.",
+      "related_topics": [
+        "rann-utsav",
+        "garba",
+        "kalamkari"
+      ],
+      "location": {
+        "place": "Bhuj",
+        "state": "Gujarat",
+        "lat": 23.242,
+        "lon": 69.6669
+      },
+      "era": "Practised for over 1,000 years"
+    },
+    {
+      "id": "chikankari",
+      "category": "textiles",
+      "name": "Chikankari",
+      "motif": "loom",
+      "question": "What is Chikankari?",
+      "alternative_questions": [
+        "Tell me about Chikankari embroidery",
+        "What is the embroidery of Lucknow?"
+      ],
+      "aliases": [
+        "Chikan work",
+        "Chikan embroidery",
+        "Lucknow chikan",
+        "Lucknowi chikan",
+        "Chikankari embroidery"
+      ],
+      "descriptors": [
+        "embroidery of lucknow",
+        "white thread embroidery",
+        "hand embroidery on muslin"
+      ],
+      "keywords": [
+        "chikankari",
+        "chikan",
+        "lucknow",
+        "embroidery",
+        "white thread",
+        "muslin",
+        "nur jahan"
+      ],
+      "answer": "Chikankari is a delicate hand embroidery from Lucknow in Uttar Pradesh. It is traditionally worked in white thread on fine white muslin, creating subtle floral patterns with a soft, shadowed look. Tradition says it was introduced by the Mughal empress Nur Jahan in the seventeenth century. Artisans use more than thirty different stitches, and a single piece can take weeks to complete.",
+      "related_topics": [
+        "kathak",
+        "banarasi-silk",
+        "biryani"
+      ],
+      "location": {
+        "place": "Lucknow",
+        "state": "Uttar Pradesh",
+        "lat": 26.8467,
+        "lon": 80.9462
+      },
+      "era": "17th century CE"
+    },
+    {
+      "id": "indian-cuisine",
+      "category": "cuisine",
+      "name": "Indian Cuisine",
+      "motif": "thali",
+      "question": "Why is Indian food so diverse?",
+      "alternative_questions": [
+        "Tell me about Indian cuisine",
+        "What is a thali?",
+        "What are the food traditions of India?"
+      ],
+      "aliases": [
+        "Indian food",
+        "Indian cuisine",
+        "Indian thali",
+        "thali",
+        "food traditions of India",
+        "regional cuisines of India"
+      ],
+      "descriptors": [
+        "food of india",
+        "indian food",
+        "regional food of india",
+        "food traditions"
+      ],
+      "keywords": [
+        "cuisine",
+        "food",
+        "thali",
+        "regional",
+        "rice",
+        "wheat",
+        "diverse"
+      ],
+      "answer": "Indian food is diverse because every region cooks with its own crops, climate and history. The north favours wheat breads, dairy and the tandoor oven. The south uses rice, lentils, coconut and tamarind. The east is known for fish, mustard and milk sweets, and the west ranges from Gujarati vegetarian meals to Goan seafood. A thali brings many small dishes together on one plate for a balanced meal.",
+      "related_topics": [
+        "spices",
+        "biryani",
+        "dosa-idli"
+      ],
+      "location": null,
+      "era": "Thousands of years of regional traditions"
+    },
+    {
+      "id": "biryani",
+      "category": "cuisine",
+      "name": "Biryani",
+      "motif": "thali",
+      "question": "What is biryani?",
+      "alternative_questions": [
+        "Tell me about biryani",
+        "What is the history of biryani?",
+        "What is Hyderabadi biryani?"
+      ],
+      "aliases": [
+        "Biriyani",
+        "Hyderabadi biryani",
+        "Lucknowi biryani",
+        "Dum biryani",
+        "Briyani"
+      ],
+      "descriptors": [
+        "layered rice dish",
+        "rice cooked with meat and spices",
+        "royal rice dish"
+      ],
+      "keywords": [
+        "biryani",
+        "rice",
+        "dum",
+        "hyderabadi",
+        "lucknowi",
+        "saffron",
+        "mughal"
+      ],
+      "answer": "Biryani is a fragrant dish of rice layered with spiced meat or vegetables. It has Persian roots and was perfected in the royal kitchens of Mughal India. It is cooked slowly in a sealed pot, a method called dum, so the rice absorbs the aromas of saffron and spices. Famous styles include Hyderabadi, Lucknowi, Kolkata biryani with potato, and Malabar biryani from Kerala.",
+      "related_topics": [
+        "charminar",
+        "spices",
+        "indian-cuisine"
+      ],
+      "location": {
+        "place": "Hyderabad",
+        "state": "Telangana",
+        "lat": 17.385,
+        "lon": 78.4867
+      },
+      "era": "Perfected in Mughal kitchens"
+    },
+    {
+      "id": "dosa-idli",
+      "category": "cuisine",
+      "name": "Dosa and Idli",
+      "motif": "thali",
+      "question": "What are dosa and idli?",
+      "alternative_questions": [
+        "Tell me about dosa",
+        "What is idli?",
+        "Tell me about South Indian food"
+      ],
+      "aliases": [
+        "Dosa",
+        "Idli",
+        "Masala dosa",
+        "Dosai",
+        "South Indian breakfast",
+        "South Indian food",
+        "Sambar"
+      ],
+      "descriptors": [
+        "south indian breakfast",
+        "south indian food",
+        "fermented rice and lentil batter",
+        "rice crepe"
+      ],
+      "keywords": [
+        "dosa",
+        "idli",
+        "sambar",
+        "chutney",
+        "fermented",
+        "rice",
+        "lentil",
+        "south india"
+      ],
+      "answer": "Dosa and idli are staple foods of South India. Both are made from a fermented batter of rice and black lentils. An idli is a soft steamed cake, while a dosa is a thin, crisp crepe cooked on a hot griddle. They are served with sambar, a lentil and vegetable stew, and coconut chutney. Fermentation makes them light, nutritious and easy to digest.",
+      "related_topics": [
+        "indian-cuisine",
+        "pongal",
+        "spices"
+      ],
+      "location": {
+        "place": "Udupi",
+        "state": "Karnataka",
+        "lat": 13.3409,
+        "lon": 74.7421
+      },
+      "era": "Over 1,000 years old"
+    },
+    {
+      "id": "spices",
+      "category": "cuisine",
+      "name": "Spices of India",
+      "motif": "thali",
+      "question": "Why is India called the land of spices?",
+      "alternative_questions": [
+        "Tell me about Indian spices",
+        "What spices is India famous for?",
+        "What is the history of the spice trade?"
+      ],
+      "aliases": [
+        "Indian spices",
+        "spices",
+        "land of spices",
+        "spice trade",
+        "black pepper",
+        "masala"
+      ],
+      "descriptors": [
+        "land of spices",
+        "spice trade",
+        "black gold of kerala",
+        "spices of kerala"
+      ],
+      "keywords": [
+        "spices",
+        "pepper",
+        "cardamom",
+        "turmeric",
+        "kerala",
+        "trade",
+        "vasco da gama",
+        "masala"
+      ],
+      "answer": "India is called the land of spices because it is the world's largest producer, consumer and exporter of spices. Black pepper from Kerala's Malabar coast was once so valuable that it was called black gold, and the search for it brought Vasco da Gama to India in 1498. Turmeric, cardamom, cumin, cloves and many others give Indian food its flavour and are also used in Ayurveda.",
+      "related_topics": [
+        "ayurveda",
+        "indian-cuisine",
+        "masala-chai"
+      ],
+      "location": {
+        "place": "Kozhikode",
+        "state": "Kerala",
+        "lat": 11.2588,
+        "lon": 75.7804
+      },
+      "era": "Traded for over 2,000 years"
+    },
+    {
+      "id": "masala-chai",
+      "category": "cuisine",
+      "name": "Masala Chai",
+      "motif": "thali",
+      "question": "What is masala chai?",
+      "alternative_questions": [
+        "Tell me about Indian tea",
+        "Why is chai so popular in India?",
+        "Tell me about Darjeeling and Assam tea"
+      ],
+      "aliases": [
+        "Chai",
+        "Masala tea",
+        "Indian tea",
+        "Assam tea",
+        "Darjeeling tea",
+        "spiced tea"
+      ],
+      "descriptors": [
+        "spiced tea",
+        "tea with milk and spices",
+        "tea of india"
+      ],
+      "keywords": [
+        "chai",
+        "tea",
+        "masala",
+        "assam",
+        "darjeeling",
+        "ginger",
+        "cardamom",
+        "milk"
+      ],
+      "answer": "Masala chai is India's favourite drink. Strong black tea is boiled with milk, sugar and spices such as ginger, cardamom, cinnamon and cloves. Large-scale tea growing began in Assam in the 1830s, and today India is one of the world's biggest tea producers, known for Assam, Darjeeling and Nilgiri teas. Sharing a cup of chai from a roadside tea stall is part of everyday life.",
+      "related_topics": [
+        "spices",
+        "bihu",
+        "indian-cuisine"
+      ],
+      "location": {
+        "place": "Darjeeling",
+        "state": "West Bengal",
+        "lat": 27.041,
+        "lon": 88.2663
+      },
+      "era": "Tea grown in India since the 1830s"
+    },
+    {
+      "id": "mithai",
+      "category": "cuisine",
+      "name": "Indian Sweets",
+      "motif": "thali",
+      "question": "What are the traditional sweets of India?",
+      "alternative_questions": [
+        "Tell me about Indian sweets",
+        "What is mithai?",
+        "Why are sweets important in Indian festivals?"
+      ],
+      "aliases": [
+        "Mithai",
+        "Indian sweets",
+        "Indian desserts",
+        "Rasgulla",
+        "Gulab jamun",
+        "Laddu",
+        "Jalebi"
+      ],
+      "descriptors": [
+        "traditional sweets",
+        "indian sweets",
+        "festival sweets",
+        "sweets of india"
+      ],
+      "keywords": [
+        "sweets",
+        "mithai",
+        "rasgulla",
+        "laddu",
+        "jalebi",
+        "gulab jamun",
+        "festival"
+      ],
+      "answer": "Indian sweets, called mithai, are part of every celebration, because sharing something sweet is seen as a blessing. Most are made from milk, sugar, flour, ghee and nuts. Favourites include laddu, jalebi and gulab jamun across the country, rasgulla and sandesh from Bengal, Mysore pak from Karnataka and modak in Maharashtra. No festival, wedding or piece of good news is complete without them.",
+      "related_topics": [
+        "diwali",
+        "ganesh-chaturthi",
+        "indian-cuisine"
+      ],
+      "location": null,
+      "era": "A part of every celebration"
+    },
+    {
+      "id": "yoga",
+      "category": "yoga",
+      "name": "Yoga",
+      "motif": "lotus",
+      "question": "What is yoga?",
+      "alternative_questions": [
+        "Tell me about yoga",
+        "What is the origin of yoga?",
+        "What are the eight limbs of yoga?"
+      ],
+      "aliases": [
+        "Yog",
+        "Yoga practice",
+        "Patanjali Yoga Sutras",
+        "Ashtanga yoga",
+        "Yoga Sutras"
+      ],
+      "descriptors": [
+        "union of body and mind",
+        "eight limbs",
+        "ancient practice of postures and breathing",
+        "yoga capital of the world"
+      ],
+      "keywords": [
+        "yoga",
+        "patanjali",
+        "asana",
+        "meditation",
+        "eight limbs",
+        "rishikesh",
+        "sutras"
+      ],
+      "answer": "Yoga is an ancient Indian practice for the health of body and mind. The word comes from the Sanskrit yuj, meaning to unite. The sage Patanjali described it in the Yoga Sutras as a path of eight limbs, including ethical living, postures called asanas, breath control and meditation. Today millions practise it worldwide, and UNESCO has recognised yoga as an intangible cultural heritage of humanity.",
+      "related_topics": [
+        "pranayama",
+        "surya-namaskar",
+        "international-yoga-day",
+        "ayurveda"
+      ],
+      "location": {
+        "place": "Rishikesh",
+        "state": "Uttarakhand",
+        "lat": 30.0869,
+        "lon": 78.2676
+      },
+      "era": "Over 2,000 years old"
+    },
+    {
+      "id": "ayurveda",
+      "category": "yoga",
+      "name": "Ayurveda",
+      "motif": "lotus",
+      "question": "What is Ayurveda?",
+      "alternative_questions": [
+        "Tell me about Ayurveda",
+        "What are the three doshas?",
+        "What is the traditional medicine of India?"
+      ],
+      "aliases": [
+        "Ayurved",
+        "Ayurvedic medicine",
+        "Ayurvedic",
+        "Charaka Samhita",
+        "Sushruta Samhita",
+        "three doshas"
+      ],
+      "descriptors": [
+        "science of life",
+        "traditional medicine of india",
+        "ancient indian medicine",
+        "vata pitta and kapha"
+      ],
+      "keywords": [
+        "ayurveda",
+        "doshas",
+        "vata",
+        "pitta",
+        "kapha",
+        "charaka",
+        "sushruta",
+        "herbs"
+      ],
+      "answer": "Ayurveda is India's traditional system of medicine, more than three thousand years old. Its name means the science of life. It teaches that health depends on a balance of three energies, or doshas, called vata, pitta and kapha, and it treats the whole person through diet, herbs, massage and daily routine. Its classic texts are the Charaka Samhita on medicine and the Sushruta Samhita on surgery.",
+      "related_topics": [
+        "yoga",
+        "spices",
+        "pranayama"
+      ],
+      "location": {
+        "place": "Kottakkal",
+        "state": "Kerala",
+        "lat": 11.0,
+        "lon": 76.0
+      },
+      "era": "Over 3,000 years old"
+    },
+    {
+      "id": "surya-namaskar",
+      "category": "yoga",
+      "name": "Surya Namaskar",
+      "motif": "lotus",
+      "question": "What is Surya Namaskar?",
+      "alternative_questions": [
+        "Tell me about Surya Namaskar",
+        "What is the sun salutation?"
+      ],
+      "aliases": [
+        "Sun Salutation",
+        "Surya Namaskara",
+        "Soorya Namaskar",
+        "Sun Salutations"
+      ],
+      "descriptors": [
+        "sun salutation",
+        "salute to the sun",
+        "twelve yoga postures"
+      ],
+      "keywords": [
+        "surya namaskar",
+        "sun salutation",
+        "twelve",
+        "postures",
+        "sunrise",
+        "breath"
+      ],
+      "answer": "Surya Namaskar, or the sun salutation, is a sequence of twelve yoga postures performed in a smooth flow, with each movement matched to the breath. It is traditionally done at sunrise, facing the rising sun, as a way of thanking the source of all life. One round stretches and strengthens almost every part of the body, which makes it a complete exercise in itself.",
+      "related_topics": [
+        "yoga",
+        "pranayama",
+        "konark-sun-temple"
+      ],
+      "location": null,
+      "era": "Traditional yoga practice"
+    },
+    {
+      "id": "pranayama",
+      "category": "yoga",
+      "name": "Pranayama",
+      "motif": "lotus",
+      "question": "What is Pranayama?",
+      "alternative_questions": [
+        "Tell me about Pranayama",
+        "What are yogic breathing exercises?"
+      ],
+      "aliases": [
+        "Pranayam",
+        "Praanayama",
+        "yogic breathing",
+        "breathing exercises",
+        "Anulom Vilom",
+        "Kapalbhati"
+      ],
+      "descriptors": [
+        "breathing exercises",
+        "control of breath",
+        "yogic breathing",
+        "alternate nostril breathing"
+      ],
+      "keywords": [
+        "pranayama",
+        "breath",
+        "prana",
+        "anulom vilom",
+        "kapalabhati",
+        "breathing"
+      ],
+      "answer": "Pranayama is the yogic practice of breath control. The word joins prana, the life force, and ayama, meaning to extend or regulate. It is the fourth of the eight limbs of yoga described by Patanjali. Common techniques include Anulom Vilom, which is alternate nostril breathing, Kapalabhati and Bhramari, the humming bee breath. Regular practice calms the mind, improves focus and prepares the body for meditation.",
+      "related_topics": [
+        "yoga",
+        "surya-namaskar",
+        "ayurveda"
+      ],
+      "location": null,
+      "era": "Fourth limb of Patanjali's yoga"
+    },
+    {
+      "id": "international-yoga-day",
+      "category": "yoga",
+      "name": "International Day of Yoga",
+      "motif": "lotus",
+      "question": "When is International Yoga Day celebrated?",
+      "alternative_questions": [
+        "What is the International Day of Yoga?",
+        "Why is Yoga Day on the twenty first of June?"
+      ],
+      "aliases": [
+        "International Yoga Day",
+        "Yoga Day",
+        "World Yoga Day",
+        "International Day of Yoga"
+      ],
+      "descriptors": [
+        "yoga day",
+        "twenty first of june",
+        "day of yoga"
+      ],
+      "keywords": [
+        "yoga day",
+        "june",
+        "united nations",
+        "solstice",
+        "international"
+      ],
+      "answer": "The International Day of Yoga is celebrated every year on the twenty-first of June. India proposed it at the United Nations in 2014, and the resolution was adopted with the support of a record one hundred and seventy-seven countries. The first Yoga Day was held in 2015. The date was chosen because it is the summer solstice, the longest day of the year in the northern hemisphere.",
+      "related_topics": [
+        "yoga",
+        "surya-namaskar",
+        "pranayama"
+      ],
+      "location": null,
+      "era": "Observed since 2015"
+    },
+    {
+      "id": "nalanda",
+      "category": "universities",
+      "name": "Nalanda University",
+      "featured": true,
+      "motif": "vihara",
+      "question": "What is Nalanda?",
+      "alternative_questions": [
+        "Tell me about Nalanda University",
+        "Why is Nalanda famous?",
+        "Who destroyed Nalanda University?"
+      ],
+      "aliases": [
+        "Nalanda",
+        "Nalanda Mahavihara",
+        "ancient Nalanda",
+        "Nalanda ruins",
+        "Nalanda library"
+      ],
+      "descriptors": [
+        "ancient university in bihar",
+        "first residential university",
+        "oldest university in india",
+        "ancient buddhist university"
+      ],
+      "keywords": [
+        "nalanda",
+        "university",
+        "bihar",
+        "kumaragupta",
+        "xuanzang",
+        "library",
+        "monastery"
+      ],
+      "answer": "Nalanda, in Bihar, was one of the world's first great residential universities. Founded in the fifth century CE under the Gupta emperor Kumaragupta the First, it taught Buddhist philosophy, logic, medicine, mathematics and astronomy to thousands of students from across Asia. The Chinese pilgrim Xuanzang studied here. Its vast library was destroyed around 1200 CE. The ruins are a UNESCO World Heritage Site.",
+      "related_topics": [
+        "takshashila",
+        "vikramshila",
+        "mahabodhi-temple"
+      ],
+      "location": {
+        "place": "Nalanda",
+        "state": "Bihar",
+        "lat": 25.1357,
+        "lon": 85.4438
+      },
+      "era": "5th–12th century CE"
+    },
+    {
+      "id": "takshashila",
+      "category": "universities",
+      "name": "Takshashila",
+      "motif": "vihara",
+      "question": "What was Takshashila?",
+      "alternative_questions": [
+        "Tell me about Takshashila University",
+        "What is Taxila?",
+        "Where did Chanakya teach?"
+      ],
+      "aliases": [
+        "Taxila",
+        "Takshashila University",
+        "Taksha Shila",
+        "Taxila University",
+        "Takshila"
+      ],
+      "descriptors": [
+        "where chanakya taught",
+        "oldest centre of learning",
+        "university where chanakya taught"
+      ],
+      "keywords": [
+        "takshashila",
+        "taxila",
+        "chanakya",
+        "panini",
+        "charaka",
+        "gandhara",
+        "learning"
+      ],
+      "answer": "Takshashila, also known as Taxila, was one of the earliest centres of higher learning in the world, flourishing from around the sixth century BCE in the ancient region of Gandhara, now in Pakistan. Students travelled there to study the Vedas, medicine, grammar, statecraft and warfare. Tradition links it with the grammarian Panini, the physician Charaka and Chanakya, the adviser of Emperor Chandragupta Maurya.",
+      "related_topics": [
+        "nalanda",
+        "vikramshila",
+        "ayurveda"
+      ],
+      "location": null,
+      "era": "From about the 6th century BCE"
+    },
+    {
+      "id": "vikramshila",
+      "category": "universities",
+      "name": "Vikramshila University",
+      "motif": "vihara",
+      "question": "What was Vikramshila University?",
+      "alternative_questions": [
+        "Tell me about Vikramshila",
+        "Who founded Vikramshila University?"
+      ],
+      "aliases": [
+        "Vikramshila",
+        "Vikramashila",
+        "Vikramshila Mahavihara",
+        "Vikram Shila"
+      ],
+      "descriptors": [
+        "university founded by dharmapala",
+        "pala university in bihar",
+        "university of the pala kings"
+      ],
+      "keywords": [
+        "vikramshila",
+        "dharmapala",
+        "pala",
+        "bihar",
+        "atisha",
+        "buddhist",
+        "tantric"
+      ],
+      "answer": "Vikramshila was a great Buddhist university in Bihar, founded by the Pala king Dharmapala in the late eighth century. Along with Nalanda, it was one of the most important centres of learning in India, especially for Tantric Buddhism. It had more than a hundred teachers and about a thousand students. Its most famous scholar, Atisha Dipankara, carried Buddhist teachings to Tibet.",
+      "related_topics": [
+        "nalanda",
+        "takshashila",
+        "mahabodhi-temple"
+      ],
+      "location": {
+        "place": "Bhagalpur",
+        "state": "Bihar",
+        "lat": 25.3243,
+        "lon": 87.2847
+      },
+      "era": "8th–12th century CE"
+    },
+    {
+      "id": "varanasi",
+      "category": "cities",
+      "name": "Varanasi",
+      "motif": "ghat",
+      "question": "Tell me about Varanasi",
+      "alternative_questions": [
+        "Why is Varanasi famous?",
+        "What is Kashi?",
+        "Which is the oldest city in India?"
+      ],
+      "aliases": [
+        "Kashi",
+        "Banaras",
+        "Benares",
+        "Kashi Vishwanath",
+        "Varanasi ghats",
+        "Banaras ghats"
+      ],
+      "descriptors": [
+        "oldest living city",
+        "oldest city in india",
+        "city on the ganga",
+        "city of ghats",
+        "spiritual capital of india"
+      ],
+      "keywords": [
+        "varanasi",
+        "kashi",
+        "banaras",
+        "ganga",
+        "ghats",
+        "vishwanath",
+        "sarnath"
+      ],
+      "answer": "Varanasi, also called Kashi or Banaras, stands on the banks of the Ganga in Uttar Pradesh and is one of the oldest continuously inhabited cities in the world. It is the spiritual heart of India, with more than eighty ghats, or riverfront steps, and the Kashi Vishwanath Temple dedicated to Shiva. Nearby is Sarnath, where the Buddha gave his first sermon. The city is also famous for music and silk.",
+      "related_topics": [
+        "ganga-aarti",
+        "banarasi-silk",
+        "kumbh-mela"
+      ],
+      "location": {
+        "place": "Varanasi",
+        "state": "Uttar Pradesh",
+        "lat": 25.3109,
+        "lon": 83.0107
+      },
+      "era": "Over 3,000 years old"
+    },
+    {
+      "id": "jaipur",
+      "category": "cities",
+      "name": "Jaipur",
+      "motif": "fort",
+      "question": "Why is Jaipur called the Pink City?",
+      "alternative_questions": [
+        "Tell me about Jaipur",
+        "What is the Hawa Mahal?",
+        "Who founded Jaipur?"
+      ],
+      "aliases": [
+        "Pink City",
+        "Jaipur city",
+        "Hawa Mahal",
+        "Amber Fort",
+        "Amer Fort",
+        "Palace of Winds"
+      ],
+      "descriptors": [
+        "pink city",
+        "palace of winds",
+        "capital of rajasthan",
+        "planned city of jai singh"
+      ],
+      "keywords": [
+        "jaipur",
+        "pink city",
+        "jai singh",
+        "hawa mahal",
+        "amber fort",
+        "rajasthan",
+        "planned"
+      ],
+      "answer": "Jaipur, the capital of Rajasthan, was founded in 1727 by Maharaja Sawai Jai Singh the Second and is one of India's earliest planned cities, laid out on a grid. It is called the Pink City because its buildings were painted pink in 1876 to welcome the Prince of Wales. Its landmarks include the Hawa Mahal, the Palace of Winds, with its 953 windows, and Amber Fort. It is a UNESCO World Heritage City.",
+      "related_topics": [
+        "jantar-mantar",
+        "blue-pottery",
+        "ghoomar"
+      ],
+      "location": {
+        "place": "Jaipur",
+        "state": "Rajasthan",
+        "lat": 26.9239,
+        "lon": 75.8267
+      },
+      "era": "Founded 1727"
+    },
+    {
+      "id": "ahmedabad",
+      "category": "cities",
+      "name": "Ahmedabad",
+      "motif": "fort",
+      "question": "Why is Ahmedabad a World Heritage City?",
+      "alternative_questions": [
+        "Tell me about the historic city of Ahmedabad",
+        "Which was India's first World Heritage City?",
+        "What is the Sabarmati Ashram?"
+      ],
+      "aliases": [
+        "Ahmedabad city",
+        "Amdavad",
+        "historic city of Ahmedabad",
+        "Sabarmati Ashram",
+        "Old Ahmedabad"
+      ],
+      "descriptors": [
+        "first world heritage city",
+        "world heritage city",
+        "city of gandhi's ashram",
+        "walled city on the sabarmati"
+      ],
+      "keywords": [
+        "ahmedabad",
+        "sabarmati",
+        "ahmad shah",
+        "pols",
+        "gandhi",
+        "gujarat",
+        "heritage city"
+      ],
+      "answer": "Ahmedabad in Gujarat became India's first UNESCO World Heritage City in 2017. Sultan Ahmad Shah founded it in 1411 on the banks of the Sabarmati river. Its old walled city is known for pols, which are close-knit gated neighbourhoods, carved wooden houses and finely latticed stone mosques. Mahatma Gandhi's Sabarmati Ashram, from where he began the Salt March in 1930, is also here.",
+      "related_topics": [
+        "khadi",
+        "rani-ki-vav",
+        "garba"
+      ],
+      "location": {
+        "place": "Ahmedabad",
+        "state": "Gujarat",
+        "lat": 23.0225,
+        "lon": 72.5714
+      },
+      "era": "Founded 1411"
+    },
+    {
+      "id": "madurai",
+      "category": "cities",
+      "name": "Madurai",
+      "motif": "gopuram",
+      "question": "Tell me about Madurai",
+      "alternative_questions": [
+        "Why is Madurai famous?",
+        "What is the history of Madurai?"
+      ],
+      "aliases": [
+        "Madurai city",
+        "temple city",
+        "Athens of the East",
+        "Madura"
+      ],
+      "descriptors": [
+        "temple city",
+        "athens of the east",
+        "capital of the pandyas",
+        "city that never sleeps"
+      ],
+      "keywords": [
+        "madurai",
+        "pandya",
+        "sangam",
+        "tamil",
+        "meenakshi",
+        "vaigai",
+        "temple city"
+      ],
+      "answer": "Madurai in Tamil Nadu is one of the oldest cities in India, with a history of more than two thousand five hundred years. It was the capital of the Pandya kings and the home of the Tamil Sangam, the ancient academies of poets. The city is laid out in rings around the Meenakshi Temple, like the petals of a lotus. It is often called the Athens of the East.",
+      "related_topics": [
+        "meenakshi-temple",
+        "pongal",
+        "carnatic-music"
+      ],
+      "location": {
+        "place": "Madurai",
+        "state": "Tamil Nadu",
+        "lat": 9.9252,
+        "lon": 78.1198
+      },
+      "era": "Over 2,500 years old"
+    },
+    {
+      "id": "udaipur",
+      "category": "cities",
+      "name": "Udaipur",
+      "motif": "fort",
+      "question": "Why is Udaipur called the City of Lakes?",
+      "alternative_questions": [
+        "Tell me about Udaipur",
+        "Who founded Udaipur?",
+        "What is the Lake Palace?"
+      ],
+      "aliases": [
+        "City of Lakes",
+        "Udaipur city",
+        "Lake Palace",
+        "Lake Pichola",
+        "Venice of the East",
+        "City Palace Udaipur"
+      ],
+      "descriptors": [
+        "city of lakes",
+        "venice of the east",
+        "capital of mewar",
+        "lake palace"
+      ],
+      "keywords": [
+        "udaipur",
+        "lakes",
+        "pichola",
+        "mewar",
+        "udai singh",
+        "rajasthan",
+        "palace"
+      ],
+      "answer": "Udaipur in Rajasthan is called the City of Lakes because it is built around a chain of beautiful lakes, including Lake Pichola and Fateh Sagar. Maharana Udai Singh the Second founded it in 1559 as the capital of the kingdom of Mewar. The City Palace rises along the lakeshore, and the white marble Lake Palace seems to float on the water, with the Aravalli hills all around.",
+      "related_topics": [
+        "jaipur",
+        "miniature-painting",
+        "ghoomar"
+      ],
+      "location": {
+        "place": "Udaipur",
+        "state": "Rajasthan",
+        "lat": 24.5854,
+        "lon": 73.7125
+      },
+      "era": "Founded 1559"
+    },
+    {
+      "id": "namaste",
+      "category": "traditions",
+      "name": "Namaste",
+      "motif": "lotus",
+      "question": "What is the meaning of Namaste?",
+      "alternative_questions": [
+        "Why do Indians say Namaste?",
+        "Tell me about Namaste",
+        "What does Namaskar mean?"
+      ],
+      "aliases": [
+        "Namaskar",
+        "Namaskaram",
+        "Namaste greeting",
+        "Indian greeting",
+        "folded hands"
+      ],
+      "descriptors": [
+        "indian greeting",
+        "greeting with folded hands",
+        "folded hands",
+        "i bow to you"
+      ],
+      "keywords": [
+        "namaste",
+        "namaskar",
+        "greeting",
+        "folded hands",
+        "bow",
+        "respect"
+      ],
+      "answer": "Namaste is the traditional Indian greeting. You join your palms together in front of your chest and bow your head slightly. The word comes from Sanskrit: namah means bow and te means to you, so it means I bow to you. The gesture expresses respect and the belief that the same divine spark lives in every person. It is used to say both hello and goodbye.",
+      "related_topics": [
+        "atithi-devo-bhava",
+        "yoga",
+        "ganga-aarti"
+      ],
+      "location": null,
+      "era": "Ancient Sanskrit greeting"
+    },
+    {
+      "id": "kumbh-mela",
+      "category": "traditions",
+      "name": "Kumbh Mela",
+      "motif": "ghat",
+      "question": "What is the Kumbh Mela?",
+      "alternative_questions": [
+        "Tell me about the Kumbh Mela",
+        "Why is the Kumbh Mela celebrated?",
+        "Where is the Kumbh Mela held?"
+      ],
+      "aliases": [
+        "Kumbh",
+        "Maha Kumbh",
+        "Mahakumbh",
+        "Kumbha Mela",
+        "Kumbh Mela Prayagraj"
+      ],
+      "descriptors": [
+        "largest gathering of pilgrims",
+        "largest religious gathering",
+        "holy dip at the sangam",
+        "largest gathering of people"
+      ],
+      "keywords": [
+        "kumbh",
+        "mela",
+        "prayagraj",
+        "haridwar",
+        "ujjain",
+        "nashik",
+        "holy dip",
+        "pilgrims"
+      ],
+      "answer": "The Kumbh Mela is the largest peaceful gathering of pilgrims on Earth. It is held in rotation at four sacred places, Prayagraj, Haridwar, Ujjain and Nashik, returning to each about once every twelve years. According to legend, drops of the nectar of immortality fell at these places from a pitcher, or kumbh. Millions bathe in the holy rivers, and UNESCO lists it as intangible cultural heritage.",
+      "related_topics": [
+        "ganga-aarti",
+        "varanasi",
+        "namaste"
+      ],
+      "location": {
+        "place": "Prayagraj",
+        "state": "Uttar Pradesh",
+        "lat": 25.4358,
+        "lon": 81.8463
+      },
+      "era": "Held about every 12 years at each site"
+    },
+    {
+      "id": "ganga-aarti",
+      "category": "traditions",
+      "name": "Ganga Aarti",
+      "motif": "ghat",
+      "question": "What is the Ganga Aarti?",
+      "alternative_questions": [
+        "Tell me about the Ganga Aarti",
+        "Where can I see the Ganga Aarti?"
+      ],
+      "aliases": [
+        "Ganga Arti",
+        "Ganges Aarti",
+        "Ganga Aarti Varanasi",
+        "evening aarti",
+        "Ganga Aarti Haridwar"
+      ],
+      "descriptors": [
+        "evening prayer on the ganga",
+        "lamp ceremony on the river",
+        "prayer to the river ganga",
+        "fire ceremony on the ghats"
+      ],
+      "keywords": [
+        "ganga aarti",
+        "ganges",
+        "lamps",
+        "haridwar",
+        "dashashwamedh",
+        "ghat",
+        "priests"
+      ],
+      "answer": "The Ganga Aarti is an evening ceremony of worship offered to the river Ganga, which is revered as a mother goddess. At sunset, priests standing on the riverbank swing large, many-tiered brass lamps in circles to the sound of bells, conch shells and chanting. Devotees float small leaf boats carrying flowers and a lit lamp on the water. It is performed daily at Varanasi, Haridwar and Rishikesh.",
+      "related_topics": [
+        "varanasi",
+        "kumbh-mela",
+        "yoga"
+      ],
+      "location": {
+        "place": "Haridwar",
+        "state": "Uttarakhand",
+        "lat": 29.9457,
+        "lon": 78.1642
+      },
+      "era": "Daily ritual at sunset"
+    },
+    {
+      "id": "rangoli",
+      "category": "traditions",
+      "name": "Rangoli",
+      "motif": "mandala",
+      "question": "What is Rangoli?",
+      "alternative_questions": [
+        "Tell me about Rangoli",
+        "Why do Indians make Rangoli?",
+        "What is Kolam?"
+      ],
+      "aliases": [
+        "Rangoli art",
+        "Kolam",
+        "Alpana",
+        "Muggu",
+        "Rangoli designs"
+      ],
+      "descriptors": [
+        "floor patterns",
+        "floor decoration with coloured powder",
+        "patterns drawn at the doorstep",
+        "coloured powder designs"
+      ],
+      "keywords": [
+        "rangoli",
+        "kolam",
+        "alpana",
+        "floor",
+        "coloured powder",
+        "rice flour",
+        "welcome"
+      ],
+      "answer": "Rangoli is the art of drawing colourful patterns on the floor, usually at the entrance of a home. It is made with coloured powder, rice flour, flower petals or sand. Rangoli welcomes guests and is believed to invite Goddess Lakshmi and good fortune, so it is made especially at Diwali and other festivals. It has many regional names, such as kolam in Tamil Nadu and alpana in Bengal.",
+      "related_topics": [
+        "diwali",
+        "pongal",
+        "mehndi"
+      ],
+      "location": null,
+      "era": "Ancient household tradition"
+    },
+    {
+      "id": "mehndi",
+      "category": "traditions",
+      "name": "Mehndi",
+      "motif": "mandala",
+      "question": "What is Mehndi?",
+      "alternative_questions": [
+        "Tell me about Mehndi",
+        "Why do brides apply Mehndi?",
+        "What is henna?"
+      ],
+      "aliases": [
+        "Mehendi",
+        "Henna",
+        "Mehandi",
+        "Mehndi ceremony",
+        "henna designs"
+      ],
+      "descriptors": [
+        "henna on the hands",
+        "henna designs on hands",
+        "bridal henna"
+      ],
+      "keywords": [
+        "mehndi",
+        "henna",
+        "hands",
+        "bride",
+        "wedding",
+        "designs",
+        "paste"
+      ],
+      "answer": "Mehndi is the art of decorating the hands and feet with a paste made from the leaves of the henna plant. When the paste dries and is removed, it leaves a reddish-brown pattern that lasts one to two weeks. It is applied at weddings and festivals such as Karva Chauth, Teej and Eid. A special Mehndi ceremony is held for the bride before an Indian wedding.",
+      "related_topics": [
+        "rangoli",
+        "eid-ul-fitr",
+        "raksha-bandhan"
+      ],
+      "location": null,
+      "era": "Practised for over 5,000 years"
+    },
+    {
+      "id": "atithi-devo-bhava",
+      "category": "traditions",
+      "name": "Atithi Devo Bhava",
+      "motif": "lotus",
+      "question": "What does Atithi Devo Bhava mean?",
+      "alternative_questions": [
+        "Tell me about Atithi Devo Bhava",
+        "Why is hospitality important in Indian culture?"
+      ],
+      "aliases": [
+        "Atithi Devo Bhavah",
+        "Atithi Devo Bhava",
+        "the guest is God",
+        "Indian hospitality"
+      ],
+      "descriptors": [
+        "the guest is god",
+        "guest is god",
+        "indian hospitality",
+        "treating a guest like god"
+      ],
+      "keywords": [
+        "atithi",
+        "guest",
+        "hospitality",
+        "upanishad",
+        "welcome",
+        "god"
+      ],
+      "answer": "Atithi Devo Bhava is a Sanskrit phrase that means the guest is God. It comes from the Taittiriya Upanishad, an ancient scripture, and teaches that a visitor should be welcomed and cared for with the same respect one would offer the divine. This idea is at the heart of Indian hospitality, where guests are greeted warmly and offered water, food and a place to rest.",
+      "related_topics": [
+        "namaste",
+        "golden-temple",
+        "indian-cuisine"
+      ],
+      "location": null,
+      "era": "From the Taittiriya Upanishad"
+    },
+    {
+      "id": "hornbill-festival",
+      "category": "regional",
+      "name": "Hornbill Festival",
+      "motif": "mask",
+      "question": "What is the Hornbill Festival?",
+      "alternative_questions": [
+        "Tell me about the Hornbill Festival",
+        "What is the festival of Nagaland?"
+      ],
+      "aliases": [
+        "Hornbill Festival of Nagaland",
+        "Nagaland Hornbill Festival",
+        "Festival of Festivals",
+        "Kisama festival"
+      ],
+      "descriptors": [
+        "festival of festivals",
+        "festival of nagaland",
+        "festival of the naga tribes"
+      ],
+      "keywords": [
+        "hornbill",
+        "nagaland",
+        "kisama",
+        "kohima",
+        "naga",
+        "tribes",
+        "december"
+      ],
+      "answer": "The Hornbill Festival is held every year from the first to the tenth of December at Kisama Heritage Village near Kohima in Nagaland. Known as the Festival of Festivals, it brings together the Naga tribes to share their dances, songs, crafts, food and traditional sports. It is named after the hornbill, a bird that is honoured in Naga folklore. The festival began in the year 2000.",
+      "related_topics": [
+        "manipuri",
+        "bihu",
+        "sattriya"
+      ],
+      "location": {
+        "place": "Kohima",
+        "state": "Nagaland",
+        "lat": 25.6751,
+        "lon": 94.1086
+      },
+      "era": "1–10 December every year"
+    },
+    {
+      "id": "pushkar-fair",
+      "category": "regional",
+      "name": "Pushkar Camel Fair",
+      "motif": "mask",
+      "question": "What is the Pushkar Camel Fair?",
+      "alternative_questions": [
+        "Tell me about the Pushkar Fair",
+        "When is the Pushkar Mela held?"
+      ],
+      "aliases": [
+        "Pushkar Fair",
+        "Pushkar Mela",
+        "Pushkar Camel Fair",
+        "Pushkar",
+        "camel fair"
+      ],
+      "descriptors": [
+        "camel fair",
+        "camel fair of rajasthan",
+        "largest camel fair",
+        "livestock fair in rajasthan"
+      ],
+      "keywords": [
+        "pushkar",
+        "camel",
+        "fair",
+        "rajasthan",
+        "brahma",
+        "kartik purnima",
+        "lake"
+      ],
+      "answer": "The Pushkar Camel Fair takes place every year in the town of Pushkar in Rajasthan, around the full moon of the month of Kartik, in October or November. It is one of the largest camel and livestock fairs in the world. Alongside the trading there are folk music, camel races and turban-tying contests. Pilgrims also bathe in the sacred Pushkar Lake and visit its rare Brahma temple.",
+      "related_topics": [
+        "ghoomar",
+        "kathputli",
+        "jaipur"
+      ],
+      "location": {
+        "place": "Pushkar",
+        "state": "Rajasthan",
+        "lat": 26.4897,
+        "lon": 74.5511
+      },
+      "era": "Kartik full moon · October–November"
+    },
+    {
+      "id": "rann-utsav",
+      "category": "regional",
+      "name": "Rann Utsav",
+      "motif": "mask",
+      "question": "What is the Rann Utsav?",
+      "alternative_questions": [
+        "Tell me about the Rann of Kutch festival",
+        "What is the white desert of Gujarat?"
+      ],
+      "aliases": [
+        "Rann Utsav",
+        "Rann of Kutch",
+        "Kutch festival",
+        "White Rann",
+        "Great Rann of Kutch",
+        "Rann festival"
+      ],
+      "descriptors": [
+        "white desert",
+        "white salt desert",
+        "festival of kutch",
+        "desert festival of gujarat"
+      ],
+      "keywords": [
+        "rann",
+        "kutch",
+        "white desert",
+        "salt",
+        "gujarat",
+        "dhordo",
+        "full moon"
+      ],
+      "answer": "The Rann Utsav is a winter festival held in the Great Rann of Kutch in Gujarat, a vast white salt desert. From about November to February, a tent city comes up at Dhordo village, where visitors enjoy folk music and dance, camel rides and local food. The Kutch region is famous for its embroidery and mirror work. The white desert glowing under a full moon is the highlight.",
+      "related_topics": [
+        "bandhani",
+        "dholavira",
+        "garba"
+      ],
+      "location": {
+        "place": "Dhordo",
+        "state": "Gujarat",
+        "lat": 23.83,
+        "lon": 69.55
+      },
+      "era": "Winter · November–February"
+    },
+    {
+      "id": "hemis-festival",
+      "category": "regional",
+      "name": "Hemis Festival",
+      "motif": "mask",
+      "question": "What is the Hemis Festival?",
+      "alternative_questions": [
+        "Tell me about the Hemis Festival of Ladakh",
+        "What is the masked dance of Ladakh?"
+      ],
+      "aliases": [
+        "Hemis",
+        "Hemis Tsechu",
+        "Hemis Monastery festival",
+        "Hemis festival of Ladakh",
+        "Cham dance"
+      ],
+      "descriptors": [
+        "masked dance of ladakh",
+        "festival of ladakh",
+        "monastery festival in ladakh",
+        "masked dance of the monks"
+      ],
+      "keywords": [
+        "hemis",
+        "ladakh",
+        "monastery",
+        "padmasambhava",
+        "cham",
+        "masked dance",
+        "lamas"
+      ],
+      "answer": "The Hemis Festival is celebrated at Hemis Monastery, the largest Buddhist monastery in Ladakh. Held for two days in June or July, it marks the birth anniversary of Guru Padmasambhava, who spread Buddhism in the Himalayas. Monks wearing colourful masks and silk robes perform the sacred Cham dance to drums, cymbals and long horns, showing the victory of good over evil.",
+      "related_topics": [
+        "pashmina",
+        "mahabodhi-temple",
+        "hornbill-festival"
+      ],
+      "location": {
+        "place": "Hemis",
+        "state": "Ladakh",
+        "lat": 33.9125,
+        "lon": 77.7031
+      },
+      "era": "Summer · June–July"
+    },
+    {
+      "id": "snake-boat-race",
+      "category": "regional",
+      "name": "Kerala Snake Boat Race",
+      "motif": "mask",
+      "question": "What is the snake boat race of Kerala?",
+      "alternative_questions": [
+        "Tell me about Vallam Kali",
+        "What is the Nehru Trophy Boat Race?"
+      ],
+      "aliases": [
+        "Vallam Kali",
+        "Vallamkali",
+        "snake boat race",
+        "Nehru Trophy Boat Race",
+        "Chundan Vallam",
+        "Kerala boat race"
+      ],
+      "descriptors": [
+        "snake boat race",
+        "boat race of kerala",
+        "boat race in the backwaters",
+        "nehru trophy"
+      ],
+      "keywords": [
+        "snake boat",
+        "vallam kali",
+        "kerala",
+        "backwaters",
+        "alappuzha",
+        "nehru trophy",
+        "rowers"
+      ],
+      "answer": "Vallam Kali is the traditional snake boat race of Kerala, held on the backwaters during the Onam season. The long, narrow boats, called chundan vallam, are over thirty metres long and carry about a hundred rowers each, who paddle in rhythm to boat songs. The most famous race is the Nehru Trophy Boat Race, held on Punnamada Lake in Alappuzha every August.",
+      "related_topics": [
+        "onam",
+        "kathakali",
+        "mohiniyattam"
+      ],
+      "location": {
+        "place": "Alappuzha",
+        "state": "Kerala",
+        "lat": 9.4981,
+        "lon": 76.3388
+      },
+      "era": "Monsoon · August–September"
+    },
+    {
+      "id": "garba",
+      "category": "folk",
+      "name": "Garba",
+      "motif": "dancer",
+      "question": "What is Garba?",
+      "alternative_questions": [
+        "Tell me about Garba",
+        "What is Dandiya?",
+        "What is the folk dance of Gujarat?"
+      ],
+      "aliases": [
+        "Garba dance",
+        "Dandiya",
+        "Dandiya Raas",
+        "Garba Raas"
+      ],
+      "descriptors": [
+        "folk dance of gujarat",
+        "dance of gujarat",
+        "circle dance of navratri",
+        "dance with sticks"
+      ],
+      "keywords": [
+        "garba",
+        "dandiya",
+        "gujarat",
+        "navratri",
+        "circle",
+        "lamp",
+        "sticks"
+      ],
+      "answer": "Garba is a joyful folk dance from Gujarat, performed during the nine nights of Navratri. Dancers move in circles around a lamp or an image of Goddess Durga, clapping and turning to the music. The name comes from garbha, meaning womb, with the lamp standing for life. In Dandiya Raas, dancers strike small decorated sticks together. UNESCO has recognised Garba as an intangible cultural heritage.",
+      "related_topics": [
+        "navratri",
+        "bandhani",
+        "ghoomar"
+      ],
+      "location": {
+        "place": "Vadodara",
+        "state": "Gujarat",
+        "lat": 22.3072,
+        "lon": 73.1812
+      },
+      "era": "Performed during Navratri"
+    },
+    {
+      "id": "bhangra",
+      "category": "folk",
+      "name": "Bhangra",
+      "motif": "dancer",
+      "question": "What is Bhangra?",
+      "alternative_questions": [
+        "Tell me about Bhangra",
+        "What is the folk dance of Punjab?",
+        "What is Giddha?"
+      ],
+      "aliases": [
+        "Bhangra dance",
+        "Bangra",
+        "Punjabi Bhangra",
+        "Giddha"
+      ],
+      "descriptors": [
+        "folk dance of punjab",
+        "dance of punjab",
+        "harvest dance of punjab",
+        "dance to the dhol"
+      ],
+      "keywords": [
+        "bhangra",
+        "punjab",
+        "dhol",
+        "harvest",
+        "baisakhi",
+        "giddha",
+        "farmers"
+      ],
+      "answer": "Bhangra is the energetic folk dance of Punjab. Farmers first performed it to celebrate the wheat harvest and the festival of Baisakhi. Dancers in bright turbans and waistcoats leap, kick and raise their arms to the powerful beat of the dhol drum. Women perform a companion dance called Giddha. Today Bhangra music and dance are enjoyed at weddings and celebrations all over the world.",
+      "related_topics": [
+        "baisakhi",
+        "golden-temple",
+        "garba"
+      ],
+      "location": {
+        "place": "Ludhiana",
+        "state": "Punjab",
+        "lat": 30.901,
+        "lon": 75.8573
+      },
+      "era": "Harvest tradition"
+    },
+    {
+      "id": "ghoomar",
+      "category": "folk",
+      "name": "Ghoomar",
+      "motif": "dancer",
+      "question": "What is Ghoomar?",
+      "alternative_questions": [
+        "Tell me about Ghoomar",
+        "What is the folk dance of Rajasthan?"
+      ],
+      "aliases": [
+        "Ghoomar dance",
+        "Ghumar",
+        "Ghoomer",
+        "Rajasthani Ghoomar"
+      ],
+      "descriptors": [
+        "folk dance of rajasthan",
+        "dance of rajasthan",
+        "twirling dance of rajasthan"
+      ],
+      "keywords": [
+        "ghoomar",
+        "rajasthan",
+        "twirl",
+        "ghagra",
+        "veil",
+        "women",
+        "bhil"
+      ],
+      "answer": "Ghoomar is a graceful folk dance of Rajasthan performed by women. Its name comes from the word ghoomna, which means to spin. Dancers in long, flowing skirts and veils twirl in circles, so that the colours of their skirts flare out. It began with the Bhil community and was later adopted by the Rajput royal courts. It is danced at weddings and festivals like Teej and Gangaur.",
+      "related_topics": [
+        "jaipur",
+        "kathputli",
+        "garba"
+      ],
+      "location": {
+        "place": "Jodhpur",
+        "state": "Rajasthan",
+        "lat": 26.2389,
+        "lon": 73.0243
+      },
+      "era": "Traditional court and village dance"
+    },
+    {
+      "id": "lavani",
+      "category": "folk",
+      "name": "Lavani",
+      "motif": "dancer",
+      "question": "What is Lavani?",
+      "alternative_questions": [
+        "Tell me about Lavani",
+        "What is the folk dance of Maharashtra?"
+      ],
+      "aliases": [
+        "Lavani dance",
+        "Lavni",
+        "Laavani",
+        "Tamasha"
+      ],
+      "descriptors": [
+        "folk dance of maharashtra",
+        "dance of maharashtra",
+        "dance to the dholki"
+      ],
+      "keywords": [
+        "lavani",
+        "maharashtra",
+        "dholki",
+        "tamasha",
+        "nine-yard saree",
+        "rhythm",
+        "peshwa"
+      ],
+      "answer": "Lavani is a lively folk art of Maharashtra that combines song and dance. Its name comes from lavanya, meaning beauty. It is performed to the quick beat of the dholki drum by women wearing nine-yard sarees, with powerful rhythm and expressive gestures. Lavani flourished during the Peshwa era in the eighteenth century and is an important part of Tamasha, the folk theatre of Maharashtra.",
+      "related_topics": [
+        "ganesh-chaturthi",
+        "warli",
+        "bhangra"
+      ],
+      "location": {
+        "place": "Pune",
+        "state": "Maharashtra",
+        "lat": 18.5204,
+        "lon": 73.8567
+      },
+      "era": "18th century CE"
+    },
+    {
+      "id": "baul",
+      "category": "folk",
+      "name": "Baul Music",
+      "motif": "veena",
+      "question": "Who are the Bauls of Bengal?",
+      "alternative_questions": [
+        "Tell me about Baul music",
+        "What are Baul songs?"
+      ],
+      "aliases": [
+        "Baul",
+        "Bauls",
+        "Baul songs",
+        "Baul singers",
+        "Bauls of Bengal",
+        "Lalon Fakir"
+      ],
+      "descriptors": [
+        "wandering minstrels of bengal",
+        "mystic singers of bengal",
+        "folk music of bengal",
+        "singers with a one string instrument"
+      ],
+      "keywords": [
+        "baul",
+        "bengal",
+        "minstrels",
+        "ektara",
+        "mystic",
+        "lalon",
+        "tagore"
+      ],
+      "answer": "The Bauls are wandering mystic minstrels of Bengal. They travel from village to village singing songs about love, humanity and the search for the divine within oneself, rejecting barriers of caste and religion. They usually play the ektara, a simple one-stringed instrument. The saint Lalon Fakir is their most revered poet, and their music deeply influenced Rabindranath Tagore. UNESCO recognises Baul songs as intangible heritage.",
+      "related_topics": [
+        "durga-puja",
+        "bankura-horse",
+        "hindustani-music"
+      ],
+      "location": {
+        "place": "Santiniketan",
+        "state": "West Bengal",
+        "lat": 23.6789,
+        "lon": 87.6855
+      },
+      "era": "Centuries-old oral tradition"
+    },
+    {
+      "id": "kathputli",
+      "category": "folk",
+      "name": "Kathputli Puppetry",
+      "motif": "mask",
+      "question": "What is Kathputli?",
+      "alternative_questions": [
+        "Tell me about the puppet shows of Rajasthan",
+        "What is the string puppet theatre of Rajasthan?"
+      ],
+      "aliases": [
+        "Kathputli",
+        "Kathputli puppets",
+        "Rajasthani puppets",
+        "string puppets",
+        "puppet show",
+        "Kath Putli"
+      ],
+      "descriptors": [
+        "string puppets",
+        "puppet theatre of rajasthan",
+        "string puppet theatre",
+        "wooden puppets of rajasthan"
+      ],
+      "keywords": [
+        "kathputli",
+        "puppet",
+        "rajasthan",
+        "string",
+        "wooden",
+        "bhat",
+        "puppeteers"
+      ],
+      "answer": "Kathputli is the traditional string puppet theatre of Rajasthan, believed to be more than a thousand years old. The name joins kath, meaning wood, and putli, meaning doll. The puppets have carved wooden heads and bright cloth costumes. Puppeteers of the Bhat community make them dance, fight and ride horses, speaking for them in a shrill voice made with a bamboo reed, while telling tales of kings and heroes.",
+      "related_topics": [
+        "ghoomar",
+        "pushkar-fair",
+        "channapatna-toys"
+      ],
+      "location": {
+        "place": "Nagaur",
+        "state": "Rajasthan",
+        "lat": 27.2,
+        "lon": 73.73
+      },
+      "era": "Over 1,000 years old"
+    }
+  ]
+}
