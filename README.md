@@ -1643,45 +1643,6 @@ itself). Facts worth re-checking before a public demo because they change over
 time: the number of UNESCO World Heritage Sites in India (stated as forty-four,
 as of 2025).
 
-## SIH demonstration instructions
-
-**Before the judges arrive**
-
-1. `python backend/cloud_server.py` — wait for "Vosk model loaded" and "knowledge base: 101 topics".
-2. Open <http://localhost:8000> full-screen in Chrome. Click anywhere once so the browser allows spoken answers; check the "Read answers aloud" switch.
-3. Power the ESP32 (or run `python hardware/edge_agent.py --device <idx>`). The status pill must read **Edge device connected** and the page **Say "Nakshatra" to begin**.
-4. Keep the laptop speaker away from the microphone; turn the volume to a level that does not feed back.
-
-**The demonstration (about three minutes)**
-
-| Step | Do | Point out |
-|---|---|---|
-| 1 | Show the idle page and the moving level meter | No audio is leaving the device — only a level number |
-| 2 | Say **"Nakshatra"** | "Nakshatra detected": the model on the ESP32 fired; the confidence appears in the telemetry |
-| 3 | Ask **"Why do we celebrate Diwali?"** | Words appear while you speak; then the answer card and the spoken answer |
-| 4 | "Nakshatra … **Tell me about the Taj Mahal**" | A different theme, related-topic chips |
-| 5 | "Nakshatra … **What is the classical dance of Tamil Nadu?**" | Described, not named — still resolves (Bharatanatyam) |
-| 6 | Say a confusable word: **"Natak"**, **"Lakshan"** | The device should stay silent: such words were recorded as hard negatives for training (96.7 % rejected on the held-out set) |
-| 7 | "Nakshatra … **What is the capital of France?**" | It says it does not know rather than inventing an answer |
-| 8 | Scroll: How it works → Explore → Featured → Map → Archive | Everything is generated from one knowledge-base file |
-
-**Questions that work well by voice** (common English words, clearly recognised):
-"Why do we celebrate Diwali in India?", "Tell me about the Taj Mahal", "What is
-the Red Fort?", "What is Navratri?", "What is yoga?", "What is the festival of
-colours?", "Tell me about the Golden Temple", "What is Raksha Bandhan?", "Why
-is Jaipur called the Pink City?", "What is the difference between Hindustani
-and Carnatic music?".
-
-**If something goes wrong**
-
-| Symptom | Fix |
-|---|---|
-| "Edge device offline" | Check the device's server address and Wi-Fi; only one edge device can be connected |
-| Wake word not firing | Speak at about 1 m, normal volume; run `edge_agent.py --debug-probs` to see the keyword probability |
-| Transcript is wrong | Use a descriptive phrasing, or tap the question instead; afterwards add the mis-heard phrase from `backend/logs/unmatched.jsonl` as an alias |
-| No spoken answer | Click the page once (browser autoplay policy) and check the switch |
-| No network at the venue | Everything runs locally; only the web fonts need the internet, and the page falls back to system fonts |
-
 ## Tests
 
 ```bash
