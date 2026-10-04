@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  The Nakshatra server (backend/cloud_server.py) is a local service on the demo
+  laptop, reached over the venue Wi-Fi by its LAN address, exactly as the ESP32
+  and the website reach it. It serves plain HTTP and its address is only known
+  at run time, so cleartext cannot be limited to a fixed list of domains.
+  The app sends no credentials or personal data: the API takes no key and the
+  only thing uploaded is the text of a heritage question.
+  User-installed certificates are not trusted.
+-->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>

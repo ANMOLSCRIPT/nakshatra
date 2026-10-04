@@ -1,0 +1,16 @@
+.gradle/
+build/
+local.properties
+*.iml
+.idea/
+.kotlin/
+captures/
+
+# build output -- the APK is published as a GitHub Release asset, not committed
+*.apk
+*.aab
+
+# signing material never goes into git
+keystore.properties
+*.jks
+*.keystore
